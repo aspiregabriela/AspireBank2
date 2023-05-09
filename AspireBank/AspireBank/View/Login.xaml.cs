@@ -16,8 +16,7 @@ namespace AspireBank.View
         {
             InitializeComponent();
 
-
-            img_logo.Source = ImageSource.FromResource("AspireBank");
+            img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
 
             NavigationPage.SetHasNavigationBar(this, false);
         }

@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Img\aaaaalogo.png" />
+    <None Remove="Img\logo.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Img\aaaaalogo.png">
+    <EmbeddedResource Include="Img\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

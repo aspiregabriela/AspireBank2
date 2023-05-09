@@ -20,7 +20,7 @@
             <Frame   CornerRadius="30"
                      HeightRequest="350"
                      Margin="15,0,15,0"
-                     VerticalOptions="CenterAndExpand">
+                     VerticalOptions="Center">
 
 
                 <StackLayout>

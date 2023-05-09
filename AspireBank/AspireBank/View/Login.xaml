@@ -20,8 +20,7 @@
             <Frame   CornerRadius="30"
                      HeightRequest="350"
                      Margin="15,0,15,0"
-                     VerticalOptions="CenterAndExpand">
-
+                     VerticalOptions="Center">
 
                 <StackLayout>
 
@@ -33,11 +32,12 @@
                     <Label Text="Senha:" FontAttributes="bold" TextColor="black"/>
                     <Entry IsPassword="True" x:Name="txt_senha"/>
                     <Button Text="Entrar" Clicked="Button_Clicked_1"   CornerRadius="10"/>
-                    <Button Text="Criar Conta" CornerRadius="10" BackgroundColor="Transparent" TextColor="Black" FontSize="14" Clicked='Button_Clicked_2'/>
+                   
 
                 </StackLayout>
             </Frame>
-
+            <Label Text="Não possui conta? Crie agora!!" FontAttributes="Bold" TextColor="Black"/>
+            <Button Text="Criar Conta" CornerRadius="10" BackgroundColor="Transparent" TextColor="White" FontSize="14" Clicked='Button_Clicked_2'/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

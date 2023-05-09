@@ -15,7 +15,9 @@ namespace AspireBank.View
 		public CriarConta ()
 		{
 			InitializeComponent ();
-		}
+
+            img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
+        }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
