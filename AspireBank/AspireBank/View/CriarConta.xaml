@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AspireBank.View.CriarConta">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#ffccff"
+                          Offset="0.1" />
+            <GradientStop Color="#ffccff"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Image x:Name="img_logo" HeightRequest="150" Scale="2.2" Margin="15" HorizontalOptions="CenterAndExpand" />
+
+            <Frame   CornerRadius="30"
+                     HeightRequest="350"
+                     Margin="15,0,15,0"
+                     VerticalOptions="CenterAndExpand">
+
+
+                <StackLayout>
+
+                    <Label Text="Insira seu dados"
+                   HorizontalOptions="Center"
+                   FontSize="Title" TextColor="Black"/>
+
+                    <Label Text="Insira seu nome:" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="txt_nome" BackgroundColor="Transparent" FontSize="20"
+                       HeightRequest="40" Placeholder="Insira seu nome completo:" PlaceholderColor="White"
+                       TextColor="black" MaxLength="100"/>
+
+                    <Label Text="Insira sua datade nascimento" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="txt_dataNasc" BackgroundColor="Transparent" FontSize="20"
+                       HeightRequest="40" Placeholder="Insira sua data de nascimento:" PlaceholderColor="White"
+                       TextColor="black" MaxLength="100"/>
+
+                    <Label Text="Insira seu CPF" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="txt_CPF" BackgroundColor="Transparent" FontSize="20"
+                       HeightRequest="40" Placeholder="Insira seu CPF:" PlaceholderColor="White"
+                       TextColor="black" MaxLength="100"/>
+
+                    <Label Text="Insira sua senha" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="txt_senha" BackgroundColor="Transparent" FontSize="20"
+                       HeightRequest="40" Placeholder="Insira sua senha:" PlaceholderColor="White"
+                       TextColor="black" MaxLength="100"/>
+
+
+                    <Button Text="Criar Conta" CornerRadius="10" BackgroundColor="Transparent"                                          
+                    TextColor="Black" FontSize="14" Clicked="Button_Clicked"/>
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>

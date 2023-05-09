@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireBank.Android", "AspireBank\AspireBank.Android\AspireBank.Android.csproj", "{74521603-8E63-4FF1-B1ED-E320EEC7BE90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireBank", "AspireBank\AspireBank\AspireBank.csproj", "{5D2CFC2C-5C4E-4678-90EC-94067EADE6D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74521603-8E63-4FF1-B1ED-E320EEC7BE90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74521603-8E63-4FF1-B1ED-E320EEC7BE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74521603-8E63-4FF1-B1ED-E320EEC7BE90}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{74521603-8E63-4FF1-B1ED-E320EEC7BE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74521603-8E63-4FF1-B1ED-E320EEC7BE90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74521603-8E63-4FF1-B1ED-E320EEC7BE90}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5D2CFC2C-5C4E-4678-90EC-94067EADE6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2CFC2C-5C4E-4678-90EC-94067EADE6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2CFC2C-5C4E-4678-90EC-94067EADE6D5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5D2CFC2C-5C4E-4678-90EC-94067EADE6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2CFC2C-5C4E-4678-90EC-94067EADE6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2CFC2C-5C4E-4678-90EC-94067EADE6D5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD0EAD01-88A1-4937-A656-0F6E96795307}
+	EndGlobalSection
+EndGlobal
