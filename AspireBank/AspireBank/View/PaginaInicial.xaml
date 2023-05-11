@@ -10,6 +10,19 @@
                      HeightRequest="350"
                      Margin="15,0,15,0"
                      VerticalOptions="Center">
+
+             <Label Text="Usario:" FontAttributes="Bold" TextColor="Black"/>
+             
+
+
+
+
+
+
+
+
+
+
             </Frame>
 
         </StackLayout>

@@ -18,7 +18,7 @@
             <Image x:Name="img_logo" HeightRequest="150" Scale="2.2" Margin="15" HorizontalOptions="CenterAndExpand" />
 
             <Frame   CornerRadius="30"
-                     HeightRequest="350"
+                     HeightRequest="400"
                      Margin="15,0,15,0"
                      VerticalOptions="Center">
 
@@ -26,8 +26,8 @@
                 <StackLayout>
 
                     <Label Text="Insira seu dados"
-                   HorizontalOptions="Center"
-                   FontSize="Title" TextColor="Black"/>
+                           HorizontalOptions="Center"
+                           FontSize="Title" TextColor="#7c127b"/>
 
                     <Label Text="Insira seu nome:" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_nome" BackgroundColor="Transparent" FontSize="20"
@@ -50,8 +50,12 @@
                        TextColor="black" MaxLength="100"/>
 
 
-                    <Button Text="Criar Conta" CornerRadius="10" BackgroundColor="Transparent"                                          
-                    TextColor="Black" FontSize="14" Clicked="Button_Clicked"/>
+                    <Button Text="Criar Conta" CornerRadius="10"
+                            BackgroundColor="Transparent"                                          
+                            TextColor="#7c127b" FontSize="14"
+                            Clicked="Button_Clicked"
+                            BorderColor="#7c127b"
+                            BorderWidth="1"/>
 
                 </StackLayout>
             </Frame>
