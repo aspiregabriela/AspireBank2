@@ -21,10 +21,7 @@ namespace AspireBank.View
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
@@ -32,17 +29,19 @@ namespace AspireBank.View
             string senha = txt_senha.Text;
 
             string usuario_certo = "gabs";
-            string senha_correta = "aspiregabs";
+            string senha_correta = "1234";
             if (usuario == usuario_certo && senha == senha_correta)
             {
                 App.Current.Properties.Add("usuario_logado", usuario);
-                // App.Current.MainPage = new NavigationPage(new Correntista());
+                App.Current.MainPage = new NavigationPage(new PaginaInicial());
             }
             else
                 DisplayAlert("Ops!", "Usuário ou senha incorretos.", "OK");
         }
 
-        private void Button_Clicked_2(object sender, EventArgs e)
+        
+
+        private void Button_Clicked_3(object sender, EventArgs e)
         {
             try
             {

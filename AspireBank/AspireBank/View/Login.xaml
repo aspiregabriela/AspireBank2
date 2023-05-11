@@ -18,9 +18,11 @@
             <Image x:Name="img_logo" HeightRequest="150" Scale="2.2" Margin="15" HorizontalOptions="CenterAndExpand" />
 
             <Frame   CornerRadius="30"
+                     BackgroundColor="#ffcbdb"
                      HeightRequest="350"
                      Margin="15,0,15,0"
                      VerticalOptions="Center">
+                
 
                 <StackLayout>
 
@@ -31,13 +33,27 @@
                     <Entry x:Name="txt_usuario"/>
                     <Label Text="Senha:" FontAttributes="bold" TextColor="black"/>
                     <Entry IsPassword="True" x:Name="txt_senha"/>
-                    <Button Text="Entrar" Clicked="Button_Clicked_1"   CornerRadius="10"/>
-                   
+                    <Button Text="Entrar" Clicked="Button_Clicked_1"  BackgroundColor="Transparent" BorderColor="AntiqueWhite" CornerRadius="10"/>
+
+                    <Button Text="Não possui conta? Criar"
+                            FontAttributes="Italic"
+                            BorderColor="white"
+                            BorderWidth="1"
+                            CornerRadius="10"
+                            HeightRequest="40"
+                            WidthRequest="50"
+                            BackgroundColor="Transparent"                  
+                            TextColor="black" 
+                            FontSize="14" 
+                    Clicked="Button_Clicked_3"/>
 
                 </StackLayout>
             </Frame>
-            <Label Text="Não possui conta? Crie agora!!" FontAttributes="Bold" TextColor="Black"/>
-            <Button Text="Criar Conta" CornerRadius="10" BackgroundColor="Transparent" TextColor="White" FontSize="14" Clicked='Button_Clicked_2'/>
+
+           
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

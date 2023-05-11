@@ -28,5 +28,27 @@ namespace AspireBank.View
                 DisplayAlert("error", ex.Message, "OK");
             }
         }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+           try
+            {
+              bool confirm = await DisplayAlert("Tem Certeza?", "Vai fazer o logout da sua conta?", "Sim", "Não");
+
+                if (confirm)
+                {
+                    App.Current.Properties.Remove("usuario_logado");
+
+                    App.Current.MainPage = new Login();
+                }
+               else throw new Exception("Falha ao fazer logout");
+
+
+            }
+           catch (Exception ex)
+           {
+               DisplayAlert("error", ex.Message, "OK");
+           }
+        }
     }
 }

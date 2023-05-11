@@ -4,6 +4,13 @@
              x:Class="AspireBank.View.PaginaInicial">
     <ContentPage.Content>
         <StackLayout>
+            <Button Clicked="Button_Clicked_1" Text="deslogar" BackgroundColor="White" Margin="10"></Button>
+
+            <Frame CornerRadius="30"
+                     HeightRequest="350"
+                     Margin="15,0,15,0"
+                     VerticalOptions="Center">
+            </Frame>
 
         </StackLayout>
     </ContentPage.Content>

@@ -34,7 +34,7 @@
                        HeightRequest="40" Placeholder="Insira seu nome completo:" PlaceholderColor="White"
                        TextColor="black" MaxLength="100"/>
 
-                    <Label Text="Insira sua datade nascimento" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Insira sua data de nascimento" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_dataNasc" BackgroundColor="Transparent" FontSize="20"
                        HeightRequest="40" Placeholder="Insira sua data de nascimento:" PlaceholderColor="White"
                        TextColor="black" MaxLength="100"/>
