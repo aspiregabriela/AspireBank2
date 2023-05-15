@@ -14,7 +14,10 @@ namespace AspireBank.View
     {
         public PaginaInicial()
         {
+           
             InitializeComponent();
+
+            img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -33,7 +36,7 @@ namespace AspireBank.View
         {
            try
             {
-              bool confirm = await DisplayAlert("Tem Certeza?", "Vai fazer o logout da sua conta?", "Sim", "Não");
+              bool confirm = await DisplayAlert("Tem Certeza?", "Deseja deslogar sua conta?", "Sim", "Não");
 
                 if (confirm)
                 {
@@ -49,6 +52,11 @@ namespace AspireBank.View
            {
                DisplayAlert("error", ex.Message, "OK");
            }
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

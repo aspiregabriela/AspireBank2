@@ -2,28 +2,65 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AspireBank.View.PaginaInicial">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#ffccff"
+                          Offset="0.1" />
+            <GradientStop Color="#ffccff"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <ContentPage.Content>
+
         <StackLayout>
-            <Button Clicked="Button_Clicked_1" Text="deslogar" BackgroundColor="White" Margin="10"></Button>
-
-            <Frame CornerRadius="30"
+            <Image x:Name="img_logo" 
+                   HeightRequest="40" 
+                   Scale="2.1" 
+                   Margin="2" 
+                   HorizontalOptions="CenterAndExpand" />
+            
+                <Frame CornerRadius="30"
                      HeightRequest="350"
-                     Margin="15,0,15,0"
+                     Margin="15,100,15,0"
                      VerticalOptions="Center">
+                <StackLayout>
+                    <Label Text="Usario:" FontAttributes="Bold" TextColor="Black"/>
+                    <Button Text="Chaves 
+                                    Pix"
+                        FontAttributes="Italic"
+                        BorderColor="#7c127b"
+                        BorderWidth="1"
+                        CornerRadius="10"
+                        HeightRequest="40"
+                        Margin="40"
+                        WidthRequest="50"
+                        BackgroundColor="Transparent"                  
+                        TextColor="#7c127b" 
+                        FontSize="14"
+                        Clicked="Button_Clicked_2"/>
+                    
+                   
 
-             <Label Text="Usario:" FontAttributes="Bold" TextColor="Black"/>
-             
 
-
-
-
-
-
-
-
-
-
+                </StackLayout>
             </Frame>
+            
+
+        <Button Text="DESLOGAR"
+                    Clicked="Button_Clicked_1"
+                    FontAttributes="Italic"
+                    BorderColor="Transparent"
+                    BorderWidth="1"
+                    CornerRadius="10"
+                    HeightRequest="40"
+                    Margin="50"
+                    WidthRequest="50"
+                    BackgroundColor="Transparent"                  
+                    TextColor="#7c127b" 
+                    FontSize="14">
+            </Button>
+
 
         </StackLayout>
     </ContentPage.Content>

@@ -15,7 +15,11 @@
         <StackLayout>
 
 
-            <Image x:Name="img_logo" HeightRequest="150" Scale="2.2" Margin="15" HorizontalOptions="CenterAndExpand" />
+            <Image x:Name="img_logo" 
+                   HeightRequest="150" 
+                   Scale="2.2"
+                   Margin="15" 
+                   HorizontalOptions="CenterAndExpand" />
 
             <Frame   CornerRadius="30"
                      BackgroundColor="White"
@@ -42,7 +46,7 @@
                             CornerRadius="10"
                             HeightRequest="40"
                             WidthRequest="50"
-                            BackgroundColor="Transparent"                  
+                            BackgroundColor="Transparent"  
                             TextColor="#7c127b" 
                             FontSize="14" 
                     Clicked="Button_Clicked_3"/>
