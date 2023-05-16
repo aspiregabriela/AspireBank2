@@ -13,41 +13,72 @@
     </ContentPage.Background>
     <ContentPage.Content>
 
-        <StackLayout>
-            <Image x:Name="img_logo" 
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <Image x:Name="img_logo" 
                    HeightRequest="40" 
                    Scale="2.1" 
                    Margin="2" 
-                   HorizontalOptions="CenterAndExpand" />
-            
-                <Frame CornerRadius="30"
+                   HorizontalOptions="CenterAndExpand" 
+                    />
+                </StackLayout>
+
+                <StackLayout>
+                    <Frame CornerRadius="30"
                      HeightRequest="350"
                      Margin="15,100,15,0"
                      VerticalOptions="Center">
-                <StackLayout>
-                    <Label Text="Usario:" FontAttributes="Bold" TextColor="Black"/>
-                    <Button Text="Chaves 
-                                    Pix"
-                        FontAttributes="Italic"
-                        BorderColor="#7c127b"
-                        BorderWidth="1"
-                        CornerRadius="10"
-                        HeightRequest="40"
-                        Margin="40"
-                        WidthRequest="50"
-                        BackgroundColor="Transparent"                  
-                        TextColor="#7c127b" 
-                        FontSize="14"
-                        Clicked="Button_Clicked_2"/>
-                    
-                   
 
 
-                </StackLayout>
-            </Frame>
-            
 
-        <Button Text="DESLOGAR"
+                        <ScrollView Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="Center"
+                                     Spacing="20" Padding="10">
+
+                                <StackLayout>
+                                    <Label Text="Usario:" FontAttributes="Bold" TextColor="Black"/>
+                                    <ImageButton Source="dolar.png" Clicked="imgpix"/>
+                                    <Button Text="Chave pix"
+                                     FontAttributes="Italic"
+                                     BorderColor="#7c127b"
+                                     BorderWidth="1"
+                                     CornerRadius="20"
+                                     HeightRequest="70"
+                                     Margin="40"
+                                     WidthRequest="70"
+                                     BackgroundColor="Transparent"                  
+                                     TextColor="#7c127b" 
+                                     FontSize="14"
+                                     />
+                                </StackLayout>
+                                    <StackLayout>
+                                    <ImageButton Source="dolar.png" Clicked="imgtrans"/>
+                                    <Button Text="Transações"
+                                     FontAttributes="Italic"
+                                     BorderColor="#7c127b"
+                                     BorderWidth="1"
+                                     CornerRadius="20"
+                                     HeightRequest="70"
+                                     Margin="40"
+                                     WidthRequest="70"
+                                     BackgroundColor="Transparent"                  
+                                     TextColor="#7c127b" 
+                                     FontSize="14"
+                                     />
+
+
+
+
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </Frame>
+
+
+
+                    <!--<Button Text="DESLOGAR"
                     Clicked="Button_Clicked_1"
                     FontAttributes="Italic"
                     BorderColor="Transparent"
@@ -59,9 +90,10 @@
                     BackgroundColor="Transparent"                  
                     TextColor="#7c127b" 
                     FontSize="14">
-            </Button>
+                   </Button> !-->
 
-
-        </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

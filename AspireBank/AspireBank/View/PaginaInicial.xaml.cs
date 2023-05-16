@@ -58,5 +58,30 @@ namespace AspireBank.View
         {
 
         }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImageButton_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgpix(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Pix());
+        }
+
+        private void imgtrans(object sender, EventArgs e)
+        {
+
+        }
     }
 }
