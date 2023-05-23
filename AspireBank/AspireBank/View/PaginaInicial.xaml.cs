@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,6 +19,11 @@ namespace AspireBank.View
             InitializeComponent();
 
             img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
+            pix.Source = ImageSource.FromResource("AspireBank.Img.pix.png");
+            meuscartoes.Source = ImageSource.FromResource("AspireBank.Img.meus cartoes.png");
+            transferencia.Source = ImageSource.FromResource("AspireBank.Img.tranferencia.png");
+            pagar.Source = ImageSource.FromResource("AspireBank.Img.pagar .png");
+            recarga.Source = ImageSource.FromResource("AspireBank.Img.recarga.png");
         }
 
         private void Button_Clicked(object sender, EventArgs e)

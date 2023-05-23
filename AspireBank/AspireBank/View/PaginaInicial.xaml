@@ -36,41 +36,74 @@
                             <StackLayout Orientation="Horizontal"
                                      HorizontalOptions="Center"
                                      Spacing="20" Padding="10">
+                                <StackLayout>
+                                    <ImageButton x:Name="pix" 
+                                                 BackgroundColor="#f0f1f5" 
+                                                 Padding="15"
+                                                 CornerRadius="50"
+                                                 WidthRequest="60"
+                                                 HeightRequest="60"/>
+                                    <Label TextColor="Black"
+                                           FontSize="14"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold"
+                                           Text="Pix"/>
+                                </StackLayout>
 
                                 <StackLayout>
-                                    <Label Text="Usario:" FontAttributes="Bold" TextColor="Black"/>
-                                    <ImageButton Source="dolar.png" Clicked="imgpix"/>
-                                    <Button Text="Chave pix"
-                                     FontAttributes="Italic"
-                                     BorderColor="#7c127b"
-                                     BorderWidth="1"
-                                     CornerRadius="20"
-                                     HeightRequest="70"
-                                     Margin="40"
-                                     WidthRequest="70"
-                                     BackgroundColor="Transparent"                  
-                                     TextColor="#7c127b" 
-                                     FontSize="14"
-                                     />
+                                    <ImageButton x:Name="meuscartoes"
+                                                 BackgroundColor="#f0f1f5" 
+                                                 Padding="10"
+                                                 CornerRadius="50" 
+                                                 WidthRequest="60"
+                                                 HeightRequest="60"/>
+                                    <Label TextColor="Black"
+                                           FontSize="14" 
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold" 
+                                           Text="Meus Cartões"/>
                                 </StackLayout>
-                                    <StackLayout>
-                                    <ImageButton Source="dolar.png" Clicked="imgtrans"/>
-                                    <Button Text="Transações"
-                                     FontAttributes="Italic"
-                                     BorderColor="#7c127b"
-                                     BorderWidth="1"
-                                     CornerRadius="20"
-                                     HeightRequest="70"
-                                     Margin="40"
-                                     WidthRequest="70"
-                                     BackgroundColor="Transparent"                  
-                                     TextColor="#7c127b" 
-                                     FontSize="14"
-                                     />
 
+                                <StackLayout>
+                                    <ImageButton x:Name="transferencia"
+                                                 BackgroundColor="#f0f1f5"
+                                                 Padding="15" 
+                                                 CornerRadius="50" 
+                                                 WidthRequest="60"
+                                                 HeightRequest="60"/>
+                                    <Label TextColor="Black" 
+                                           FontSize="14"
+                                           HorizontalOptions="Center" 
+                                           FontAttributes="Bold"
+                                           Text="Transferência"/>
+                                </StackLayout>
 
+                                <StackLayout>
+                                    <ImageButton x:Name="pagar" 
+                                                 BackgroundColor="#f0f1f5"
+                                                 Padding="15"
+                                                 CornerRadius="50"
+                                                 WidthRequest="60"
+                                                 HeightRequest="60"/>
+                                    <Label TextColor="Black" 
+                                           FontSize="14" 
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold"
+                                           Text="Pagamentos"/>
+                                </StackLayout>
 
-
+                                <StackLayout>
+                                    <ImageButton x:Name="recarga"
+                                                 BackgroundColor="#f0f1f5" 
+                                                 Padding="15"
+                                                 CornerRadius="50"
+                                                 WidthRequest="60"
+                                                 HeightRequest="60"/>
+                                    <Label TextColor="Black"
+                                           FontSize="14"
+                                           HorizontalOptions="Center"
+                                           FontAttributes="Bold"
+                                           Text="Recarga"/>
                                 </StackLayout>
                             </StackLayout>
                         </ScrollView>

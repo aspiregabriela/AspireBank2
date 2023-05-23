@@ -12,10 +12,30 @@
 
   <ItemGroup>
     <None Remove="Img\logo.png" />
+    <None Remove="Img\meus cartoes.png" />
+    <None Remove="Img\pagar .png" />
+    <None Remove="Img\pix.png" />
+    <None Remove="Img\recarga.png" />
+    <None Remove="Img\tranferencia.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Img\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\meus cartoes.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\pagar .png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\pix.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\recarga.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\tranferencia.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
