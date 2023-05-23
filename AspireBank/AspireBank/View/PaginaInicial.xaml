@@ -38,9 +38,9 @@
                                      Spacing="20" Padding="10">
                                 <StackLayout>
                                     <ImageButton x:Name="pix" 
-                                                 BackgroundColor="#f0f1f5" 
+                                                 BackgroundColor="#7c127b" 
                                                  Padding="15"
-                                                 CornerRadius="50"
+                                                 CornerRadius="40"
                                                  WidthRequest="60"
                                                  HeightRequest="60"/>
                                     <Label TextColor="Black"
@@ -52,7 +52,7 @@
 
                                 <StackLayout>
                                     <ImageButton x:Name="meuscartoes"
-                                                 BackgroundColor="#f0f1f5" 
+                                                 BackgroundColor="#7c127b" 
                                                  Padding="10"
                                                  CornerRadius="50" 
                                                  WidthRequest="60"
@@ -66,7 +66,7 @@
 
                                 <StackLayout>
                                     <ImageButton x:Name="transferencia"
-                                                 BackgroundColor="#f0f1f5"
+                                                 BackgroundColor="#7c127b"
                                                  Padding="15" 
                                                  CornerRadius="50" 
                                                  WidthRequest="60"
@@ -80,7 +80,7 @@
 
                                 <StackLayout>
                                     <ImageButton x:Name="pagar" 
-                                                 BackgroundColor="#f0f1f5"
+                                                 BackgroundColor="#7c127b"
                                                  Padding="15"
                                                  CornerRadius="50"
                                                  WidthRequest="60"
@@ -94,7 +94,7 @@
 
                                 <StackLayout>
                                     <ImageButton x:Name="recarga"
-                                                 BackgroundColor="#f0f1f5" 
+                                                 BackgroundColor="#7c127b" 
                                                  Padding="15"
                                                  CornerRadius="50"
                                                  WidthRequest="60"
