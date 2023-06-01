@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -18,12 +19,15 @@ namespace AspireBank.View
            
             InitializeComponent();
 
-            img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
+            /** img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");*/
             pix.Source = ImageSource.FromResource("AspireBank.Img.pix.png");
             meuscartoes.Source = ImageSource.FromResource("AspireBank.Img.meus cartoes.png");
             transferencia.Source = ImageSource.FromResource("AspireBank.Img.tranferencia.png");
             pagar.Source = ImageSource.FromResource("AspireBank.Img.pagar .png");
             recarga.Source = ImageSource.FromResource("AspireBank.Img.recarga.png");
+            user.Source = ImageSource.FromResource("AspireBank.Img.user.png");
+
+
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -56,7 +60,7 @@ namespace AspireBank.View
             }
            catch (Exception ex)
            {
-               DisplayAlert("error", ex.Message, "OK");
+               //*DisplayAlert("error", ex.Message, "OK");
            }
         }
 

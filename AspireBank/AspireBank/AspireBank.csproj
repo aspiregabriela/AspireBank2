@@ -17,6 +17,7 @@
     <None Remove="Img\pix.png" />
     <None Remove="Img\recarga.png" />
     <None Remove="Img\tranferencia.png" />
+    <None Remove="Img\user.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Img\tranferencia.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\user.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 
