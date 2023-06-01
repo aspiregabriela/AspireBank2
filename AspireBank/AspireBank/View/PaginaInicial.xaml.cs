@@ -27,6 +27,7 @@ namespace AspireBank.View
             recarga.Source = ImageSource.FromResource("AspireBank.Img.recarga.png");
             user.Source = ImageSource.FromResource("AspireBank.Img.user.png");
 
+            NavigationPage.SetHasNavigationBar(this, false);
 
         }
 
