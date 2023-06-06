@@ -9,6 +9,8 @@ namespace AspireBank
 {
     public partial class App : Application
     {
+        public static DadoUsuario DadosUsuario { get; set; }
+
         public List<DadoUsuario> lista_usuario = new List<DadoUsuario>
         {
              new  DadoUsuario()

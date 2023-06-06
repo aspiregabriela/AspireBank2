@@ -29,70 +29,84 @@ namespace AspireBank.View
 
             NavigationPage.SetHasNavigationBar(this, false);
 
-        }
+            /**string[] resultsArray = explode (" ", App.DadosUsuario.Usuario);
+            string nome = resultsArray[0]; */
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            try
-            {
-                App.Current.MainPage = new NavigationPage(new Login());
-            }
-            catch (Exception ex)
-            {
-                DisplayAlert("error", ex.Message, "OK");
-            }
-        }
-
-        private async void Button_Clicked_1(object sender, EventArgs e)
-        {
-           try
-            {
-              bool confirm = await DisplayAlert("Tem Certeza?", "Deseja deslogar sua conta?", "Sim", "Não");
-
-                if (confirm)
-                {
-                    App.Current.Properties.Remove("usuario_logado");
-
-                    App.Current.MainPage = new Login();
-                }
-               else throw new Exception("Falha ao fazer logout");
-
-
-            }
-           catch (Exception ex)
-           {
-               //*DisplayAlert("error", ex.Message, "OK");
-           }
-        }
-
-        private void Button_Clicked_2(object sender, EventArgs e)
-        {
+            /**txt_correntista.Text = nome;*/
 
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
-        {
+        public static string[] explode(string separator, string source)
+{
+return source.Split(new string[] { separator }, StringSplitOptions.None);
+}
 
-        }
 
-        private void ImageButton_Clicked_1(object sender, EventArgs e)
-        {
 
-        }
+private void Button_Clicked(object sender, EventArgs e)
+{
+try
+{
+    App.Current.MainPage = new NavigationPage(new Login());
+}
+catch (Exception ex)
+{
+    DisplayAlert("error", ex.Message, "OK");
+}
+}
 
-        private void ImageButton_Clicked_2(object sender, EventArgs e)
-        {
+private async void Button_Clicked_1(object sender, EventArgs e)
+{
+try
+{
+  bool confirm = await DisplayAlert("Tem Certeza?", "Deseja deslogar sua conta?", "Sim", "Não");
 
-        }
+    if (confirm)
+    {
+        App.Current.Properties.Remove("usuario_logado");
 
-        private void imgpix(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new View.Pix());
-        }
-
-        private void imgtrans(object sender, EventArgs e)
-        {
-
-        }
+        App.Current.MainPage = new Login();
     }
+   else throw new Exception("Falha ao fazer logout");
+
+
+}
+catch (Exception ex)
+{
+   //*DisplayAlert("error", ex.Message, "OK");
+}
+}
+
+
+
+private void Button_Clicked_2(object sender, EventArgs e)
+{
+
+}
+
+private void ImageButton_Clicked(object sender, EventArgs e)
+{
+
+}
+
+private void ImageButton_Clicked_1(object sender, EventArgs e)
+{
+
+}
+
+private void ImageButton_Clicked_2(object sender, EventArgs e)
+{
+
+}
+
+private void imgpix(object sender, EventArgs e)
+{
+Navigation.PushAsync(new View.Pix());
+}
+
+private void imgtrans(object sender, EventArgs e)
+{
+
+}
+}
 }
