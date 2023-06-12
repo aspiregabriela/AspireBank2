@@ -73,7 +73,7 @@ try
 }
 catch (Exception ex)
 {
-   //*DisplayAlert("error", ex.Message, "OK");
+   await DisplayAlert("error", ex.Message, "OK");
 }
 }
 
