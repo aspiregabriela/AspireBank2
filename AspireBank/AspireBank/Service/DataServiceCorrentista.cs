@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AspireBank.Service
 {
-        public class Correntista : DataService
+        public class DataServiceCorrentista : DataService
         {
             public static async Task<Correntista> Cadastrar(Correntista c)
             {
@@ -24,21 +24,23 @@ namespace AspireBank.Service
                 return correntista;
             }
 
-           // public static async Task<Correntista> Autorizar(Correntista c)
-            //{
-                //var json_to_send = JsonConvert.SerializeObject(c);
+        public static async Task<Correntista> Autorizar(Correntista c)
+        {
+            var json_to_send = JsonConvert.SerializeObject(c);
 
-                //string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.CPF, c.Senha));
+            string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.CPF, c.Senha));
 
-                //Correntista correntista = new Correntista();
-                //if (json != "false")
-                //{
-                  //  correntista = JsonConvert.DeserializeObject<Correntista>(json);//
-               // }
+            Correntista correntista = new Correntista();
+            if (json != "false")
+            {
+                correntista = JsonConvert.DeserializeObject<Correntista>(json);
+            }
+            Console.WriteLine(json);
 
 
-               // return correntista;//
-           // }
-       }
+            return correntista;
+
+        }
+    }
     
 }
