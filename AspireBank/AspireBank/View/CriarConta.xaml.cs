@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AspireBank.Model;
+using AspireBank.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,23 +14,41 @@ namespace AspireBank.View
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CriarConta : ContentPage
 	{
-		public CriarConta ()
+		public CriarConta()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 
-            img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
-        }
+			img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
+		}
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
+		private async void Button_Clicked(object sender, EventArgs e)
+		{
             try
             {
-                App.Current.MainPage = new NavigationPage(new Login());
+
+                await DataServiceCorrentista.Cadastrar(new Correntista
+                {
+                    nome = txt_nome.Text,
+                    data_Nasc = txt_dataNasc.Date,
+                    cpf = txt_cpf.Text,
+                    senha = txt_senha.Text
+                });
+
+                await DisplayAlert("Sucesso!", "Você foi cadastrado.", "OK");
+                await Navigation.PushAsync(new MainPage());
+
             }
             catch (Exception ex)
             {
-                DisplayAlert("error", ex.Message, "OK");
+                await DisplayAlert("Ops", ex.Message, "OK");
+
+            }
+            finally
+            {
+                //carregando.IsRunning = false;
+                //carregando.IsVisible = false;//
             }
         }
     }
 }
+

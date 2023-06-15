@@ -28,7 +28,7 @@ namespace AspireBank.Service
         {
             var json_to_send = JsonConvert.SerializeObject(c);
 
-            string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.CPF, c.Senha));
+            string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.cpf, c.senha));
 
             Correntista correntista = new Correntista();
             if (json != "false")
