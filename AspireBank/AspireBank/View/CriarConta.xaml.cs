@@ -29,7 +29,7 @@ namespace AspireBank.View
                 await DataServiceCorrentista.Cadastrar(new Correntista
                 {
                     nome = txt_nome.Text,
-                    data_Nasc = txt_dataNasc.Date,
+                    data_nasc = txt_dataNasc.Date,
                     cpf = txt_cpf.Text,
                     senha = txt_senha.Text
                 });

@@ -10,6 +10,6 @@ namespace AspireBank.Model
         public string nome { get; set; }
         public string senha { get; set; }
         public string cpf { get; set; }
-        public DateTime data_Nasc { get; set; }
+        public DateTime data_nasc { get; set; }
     }
 }
