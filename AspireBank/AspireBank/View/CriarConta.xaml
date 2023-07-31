@@ -29,24 +29,24 @@
 
                 <StackLayout>
 
-                    <Label Text="Insira seu dados"
+                    <Label Text="Insira Seus Dados"
                            HorizontalOptions="Center"
-                           FontSize="Title" TextColor="#7c127b"/>
+                           FontSize="Title" FontAttributes="Bold" TextColor="#7c127b"/>
 
-                    <Label Text="nome" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Nome:" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_nome" BackgroundColor="Transparent" FontSize="20"
                        HeightRequest="40" Placeholder="Insira seu nome completo:" PlaceholderColor="White"
                        TextColor="black" MaxLength="100"/>
 
-                    <Label Text="data de nascimento" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Data de Nascimento:" FontAttributes="Bold" TextColor="Black"/>
                     <DatePicker x:Name="txt_dataNasc" Format="dd/MM/yyyy" />
 
-                    <Label Text="cpf" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="CPF:" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_cpf" BackgroundColor="Transparent" FontSize="20"
                        HeightRequest="40" Placeholder="Insira seu CPF:" PlaceholderColor="White"
                        TextColor="black" MaxLength="100"/>
 
-                    <Label Text="senha" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Senha:" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_senha" BackgroundColor="Transparent" FontSize="20"
                        HeightRequest="40" Placeholder="Insira sua senha:" PlaceholderColor="White"
                        TextColor="black" MaxLength="100"/>
