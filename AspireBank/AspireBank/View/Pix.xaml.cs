@@ -15,6 +15,8 @@ namespace AspireBank.View
         public Pix()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)
@@ -23,6 +25,16 @@ namespace AspireBank.View
         }
 
         private void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bntcobrar(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bntbanco(object sender, EventArgs e)
         {
 
         }

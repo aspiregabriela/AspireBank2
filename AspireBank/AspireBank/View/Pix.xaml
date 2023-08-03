@@ -3,17 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AspireBank.View.Pix"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="White">
+             BackgroundColor="#white">
 
     <StackLayout>
         <Frame HasShadow="True">
-            <ImageButton Source="cruz.png" Clicked="btnBack"
-                         HorizontalOptions="Start" BackgroundColor="White"/>
+           <!--<ImageButton Source="cruz.png"  Clicked="btnBack"
+                         HorizontalOptions="Start" BackgroundColor="White"/> -->
         </Frame>
         <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
 
             <Label Text="Área Pix."
                    TextColor="Black" 
+                   FontAttributes="Bold"
                    FontSize="21"/>
             <Label Text="Envie e receba em qualquer hora ou dia da semana, sem pagar nada por isso."
                    FontSize="15"
@@ -27,7 +28,7 @@
 
                 <StackLayout>
                     <ImageButton Source="cobrar.png"  
-                                 Clicked="btntransferir" 
+                                 Clicked="bntcobrar" 
                                  WidthRequest="60" 
                                  HeightRequest="60"
                                  BackgroundColor="#f0f1f5"
@@ -43,7 +44,7 @@
                 <StackLayout>
 
                     <ImageButton Source="banco.png"
-                                 Clicked="btnReceber"
+                                 Clicked="bntbanco"
                                  WidthRequest="60"
                                  HeightRequest="60" 
                                  BackgroundColor="#f0f1f5"
