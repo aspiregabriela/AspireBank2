@@ -55,40 +55,24 @@
                     <Label TextColor="Black" 
                            FontSize="14"
                            HorizontalOptions="Center" 
-                           Text="Pix Copia
-                                   e Cola"/>
+                           Text="Pix Copia e Cola"/>
                 </StackLayout>
 
-
-
-                <Label Text="Enviar" 
-                           FontAttributes="Bold"
-                           TextColor="Black"
-                           FontSize="21"
-                           VerticalTextAlignment="Center"
-                           VerticalOptions="Center"/>
-
-
-
-
                 <StackLayout>
-
-                        <ImageButton Source="copiaecola.png"
-                                 Clicked="btncopiaecola"
+                    <ImageButton Source="btnqrcode.png"
+                                 Clicked="btnqrcode"
                                  WidthRequest="60"
                                  HeightRequest="60" 
                                  BackgroundColor="#f0f1f5"
                                  Padding="15" 
                                  CornerRadius="50"/>
 
-                        <Label TextColor="Black" 
+                    <Label TextColor="Black" 
                            FontSize="14"
                            HorizontalOptions="Center" 
                            Text="Ler QR code"/>
-
-
-                    </StackLayout>
                 </StackLayout>
+            </StackLayout>
         </Grid>
     </StackLayout>
 </ContentPage>
