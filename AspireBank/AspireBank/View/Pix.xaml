@@ -6,6 +6,7 @@
              BackgroundColor="#white">
 
     <StackLayout>
+
         <Frame HasShadow="True">
            <!--<ImageButton Source="cruz.png"  Clicked="btnBack"
                          HorizontalOptions="Start" BackgroundColor="White"/> -->
@@ -21,7 +22,7 @@
                    TextColor="Gray"
                    Grid.Row="1" />
 
-            <Label Text="Envie ou Receba" FontAttributes="Bold"
+            <Label Text="Enviar" FontAttributes="Bold"
                    TextColor="Black" FontSize="21" Grid.Row="2"/>
 
             <StackLayout Orientation="Horizontal" Spacing="60" Grid.Row="3">
@@ -54,9 +55,40 @@
                     <Label TextColor="Black" 
                            FontSize="14"
                            HorizontalOptions="Center" 
-                           Text="Depositar"/>
+                           Text="Pix Copia
+                                   e Cola"/>
                 </StackLayout>
-            </StackLayout>
+
+
+
+                <Label Text="Enviar" 
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           FontSize="21"
+                           VerticalTextAlignment="Center"
+                           VerticalOptions="Center"/>
+
+
+
+
+                <StackLayout>
+
+                        <ImageButton Source="copiaecola.png"
+                                 Clicked="btncopiaecola"
+                                 WidthRequest="60"
+                                 HeightRequest="60" 
+                                 BackgroundColor="#f0f1f5"
+                                 Padding="15" 
+                                 CornerRadius="50"/>
+
+                        <Label TextColor="Black" 
+                           FontSize="14"
+                           HorizontalOptions="Center" 
+                           Text="Ler QR code"/>
+
+
+                    </StackLayout>
+                </StackLayout>
         </Grid>
     </StackLayout>
 </ContentPage>

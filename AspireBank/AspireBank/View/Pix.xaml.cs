@@ -38,5 +38,15 @@ namespace AspireBank.View
         {
 
         }
+
+        private void btncopiaecola(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnqrcode(object sender, EventArgs e)
+        {
+
+        }
     }
 }

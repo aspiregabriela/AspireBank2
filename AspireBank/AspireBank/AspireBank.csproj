@@ -12,10 +12,12 @@
 
   <ItemGroup>
     <None Remove="Img\banco.png" />
+    <None Remove="Img\copiaecola.png" />
     <None Remove="Img\logo.png" />
     <None Remove="Img\meus cartoes.png" />
     <None Remove="Img\pagar .png" />
     <None Remove="Img\pix.png" />
+    <None Remove="Img\qrcode.png" />
     <None Remove="Img\recarga.png" />
     <None Remove="Img\tranferencia.png" />
     <None Remove="Img\user.png" />
@@ -24,6 +26,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Img\banco.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\copiaecola.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Img\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -35,6 +40,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Img\pix.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\qrcode.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Img\user.png">
