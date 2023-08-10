@@ -14,19 +14,19 @@ namespace AspireBank.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PaginaInicial : ContentPage
     {
+        double saldo;
+        double fatura;
+        double limite = 2500;
         public PaginaInicial()
         {
-           
             InitializeComponent();
 
-            /**img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");*/
-            /**pix.Source = ImageSource.FromResource("AspireBank.Img.pix.png");
-            pagar.Source = ImageSource.FromResource("AspireBank.Img.pagar .png")
-             * 
-             * 
-            xstring nome = resultsArray[0]; */
-
-            /**txt_correntista.Text = nome;*/
+            saldo = 1274.45;
+            fatura = 78.87;
+            limite -= fatura;
+            LblSaldo.Text = saldo.ToString("C");
+            LblFatura.Text = fatura.ToString("C");
+            LblLimite.Text = limite.ToString("C");
 
         }
 
@@ -34,8 +34,6 @@ namespace AspireBank.View
         {
         return source.Split(new string[] { separator }, StringSplitOptions.None);
         }
-
-
 
         private void Button_Clicked(object sender, EventArgs e)
         {
@@ -51,46 +49,24 @@ namespace AspireBank.View
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-        try
-        {
-        bool confirm = await DisplayAlert("Tem Certeza?", "Deseja deslogar sua conta?", "Sim", "Não");
+            try
+            {
+                bool confirm = await DisplayAlert("Tem Certeza?", "Deseja deslogar sua conta?", "Sim", "Não");
 
-         if (confirm)
-         {
-            App.Current.Properties.Remove("usuario_logado");
+                if (confirm)
+                {
+                    App.Current.Properties.Remove("usuario_logado");
 
-            App.Current.MainPage = new Login();
-         }
-           else throw new Exception("Falha ao fazer logout");
+                    App.Current.MainPage = new Login();
+                }
+                else throw new Exception("Falha ao fazer logout");
 
 
-        }
+            }
             catch (Exception ex)
-        {
-            await DisplayAlert("error", ex.Message, "OK");
-        }
-        }
-
-
-
-        private void Button_Clicked_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ImageButton_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ImageButton_Clicked_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ImageButton_Clicked_2(object sender, EventArgs e)
-        {
-
+            {
+                await DisplayAlert("error", ex.Message, "OK");
+            }
         }
 
         private void imgpix(object sender, EventArgs e)
@@ -98,9 +74,18 @@ namespace AspireBank.View
         Navigation.PushAsync(new Pix());
         }
 
-        private void imgtrans(object sender, EventArgs e)
+        private void btnHide(object sender, EventArgs e)
         {
-
+            if (LblSaldo.Text == saldo.ToString("C"))
+            {
+                eyebutton.Source = "eyes.png";
+                LblSaldo.Text = "━━━━━━";
+            }
+            else
+            {
+                LblSaldo.Text = saldo.ToString("C");
+                eyebutton.Source = "eyecross.png";
+            }
         }
-}
+    }
 }

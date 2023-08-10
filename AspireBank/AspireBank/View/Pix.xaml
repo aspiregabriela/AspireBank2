@@ -32,7 +32,7 @@
                                  Clicked="bntcobrar" 
                                  WidthRequest="60" 
                                  HeightRequest="60"
-                                 BackgroundColor="#f0f1f5"
+                                 BackgroundColor="Beige"
                                  Padding="15" 
                                  CornerRadius="50"/>
 
@@ -55,7 +55,7 @@
                     <Label TextColor="Black" 
                            FontSize="14"
                            HorizontalOptions="Center" 
-                           Text="Pix Copia e Cola"/>
+                           Text="Copia e Cola"/>
                 </StackLayout>
 
                 <StackLayout>
