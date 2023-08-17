@@ -21,12 +21,21 @@ namespace AspireBank.View
         {
             InitializeComponent();
 
+            pagar.Source = ImageSource.FromResource("AspireBank.Img.pagar.png");
+            pixx.Source = ImageSource.FromResource("AspireBank.Img.pix.png");
+            banco.Source = ImageSource.FromResource("AspireBank.Img.banco.png");
+
             saldo = 1274.45;
             fatura = 78.87;
             limite -= fatura;
             LblSaldo.Text = saldo.ToString("C");
             LblFatura.Text = fatura.ToString("C");
             LblLimite.Text = limite.ToString("C");
+
+            
+
+            NavigationPage.SetHasNavigationBar(this, false);
+            
 
         }
 

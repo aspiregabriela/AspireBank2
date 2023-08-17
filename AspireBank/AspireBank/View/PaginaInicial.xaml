@@ -6,7 +6,7 @@
     <ScrollView>
         <StackLayout>
 
-            <StackLayout BackgroundColor="#ffccff" Padding="20" Spacing="20">
+            <StackLayout BackgroundColor="#7c127b" Padding="20" Spacing="20">
 
                 <StackLayout Orientation="Horizontal">
                     
@@ -70,9 +70,9 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Padding="10">
 
                     <StackLayout>
-                        <ImageButton Source="dolar.png" 
-                                     
-                                     BackgroundColor="#f0f1f5" 
+                        <ImageButton Source="pix.png" 
+                                     x:Name="pixx"
+                                     BackgroundColor="#7c127b "
                                      Padding="15"
                                      CornerRadius="50"
                                      WidthRequest="60"
@@ -87,19 +87,38 @@
                     </StackLayout>
 
                     <StackLayout>
-                        <ImageButton Source="payment.png"
-                                     BackgroundColor="#f0f1f5"
+                        <ImageButton Source="pagar.png"
+                                     x:Name="pagar"
+                                     BackgroundColor="#7c127b"
                                      Padding="10" 
                                      CornerRadius="50" 
                                      WidthRequest="60"
                                      HeightRequest="60"/>
                         
                         <Label TextColor="Black"
-                               FontSize="14" 
+                               FontSize="13" 
                                HorizontalOptions="Center"
                                FontAttributes="Bold"
-                               Text="Pagar"/>
+                               Text="Transferir"/>
                         
+                    </StackLayout>
+                    <StackLayout>
+                        <ImageButton Source="banco.png"
+                                     x:Name="banco"
+                                     BackgroundColor="#7c127b"
+                                     Padding="10" 
+                                     CornerRadius="50" 
+                                     WidthRequest="60"
+                                     HeightRequest="60"/>
+
+                        <Label TextColor="Black"
+                               FontSize="13" 
+                               Padding="10"
+                               WidthRequest="60"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               Text="Emprestimos "/>
+
                     </StackLayout>
 
                     <StackLayout>
@@ -117,77 +136,43 @@
                                Text="Recarga"/>
                     </StackLayout>
 
-                    <StackLayout>
-                        <ImageButton Source="boleto.png" 
-                                     BackgroundColor="#f0f1f5"
-                                     Padding="15"
-                                     CornerRadius="50"
-                                     WidthRequest="60"
-                                     HeightRequest="60"/>
-                        
-                        <Label TextColor="Black"
-                               FontSize="14"
-                               HorizontalOptions="Center"
-                               FontAttributes="Bold"
-                               Text="Boleto"/>
-                    </StackLayout>
-
-                    <StackLayout>
-                        <ImageButton Source="banco.png" 
-                                     BackgroundColor="#f0f1f5" 
-                                     Padding="15" 
-                                     CornerRadius="50"
-                                     WidthRequest="60"
-                                     HeightRequest="60"/>
-                        
-                        <Label TextColor="Black"
-                               FontSize="14" 
-                               HorizontalOptions="Center"
-                               FontAttributes="Bold"
-                               Text="Transferir"/>
-                    </StackLayout>
-
-                    <StackLayout>
-                        <ImageButton Source="cobrar.png" 
-                                     BackgroundColor="#f0f1f5"
-                                     Padding="15" 
-                                     CornerRadius="50"
-                                     WidthRequest="60"
-                                     HeightRequest="60"/>
-                        
-                        <Label TextColor="Black"
-                               FontSize="14" 
-                               HorizontalOptions="Center" 
-                               FontAttributes="Bold" Text="Cobrar"/>
-                    </StackLayout>
-
-                    <StackLayout>
-                        <ImageButton Source="doar.png" BackgroundColor="#f0f1f5" Padding="15" CornerRadius="50" WidthRequest="60" HeightRequest="60"/>
-                        <Label TextColor="Black" FontSize="14" HorizontalOptions="Center" FontAttributes="Bold" Text="Doação"/>
-                    </StackLayout>
+                    
 
                 </StackLayout>
             </ScrollView>
 
             <StackLayout Margin="0,15">
 
-                <Button Text="Meus Cartões" Padding="10,10,220,10" TextTransform="None" HorizontalOptions="Center" BackgroundColor="#f0f1f5"
-                ContentLayout="Left,10" Image="cartao.png" TextColor="Black" CornerRadius="10"/>
-
+                <Button Text="Meus Cartões"
+                        Padding="10,10,220,10"
+                        TextTransform="None" 
+                        HorizontalOptions="Center"
+                        BackgroundColor="#f0f1f5"
+                        ContentLayout="Left,10" 
+                        ImageSource="cartao.png"
+                        TextColor="Black"
+                        CornerRadius="10"/>
             </StackLayout>
 
             <ScrollView Orientation="Horizontal">
-                <StackLayout Orientation="Horizontal" Padding="20" Spacing="20" HorizontalOptions="Center">
+                <StackLayout Orientation="Horizontal" Padding="25" Spacing="20" HorizontalOptions="Center">
                     <StackLayout>
-                        <Frame BackgroundColor="#f0f1f5" WidthRequest="270" CornerRadius="20" HeightRequest="50">
+                        <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="30" HeightRequest="70">
 
                             <Label>
                                 <Label.FormattedText>
 
                                     <FormattedString>
-
-                                        <Span Text="IPO do Nubank: " FontAttributes="Bold" FontSize="16" TextColor="#"/>
-                                        <Span Text="Investimentos a partir de de R$30 até 07/06" FontSize="16" TextColor="Black"/>
+                                        <Span Text="Esqueceu de pagar um amigo? Transfira a qualquer hora, sem taxas"
+                                              FontSize="14"
+                                              TextColor="Black"/>
+                                        
+                                        <Span Text="
+                                              
+                                              Fazer Trasferencia "
+                                              FontAttributes="Bold" 
+                                              FontSize="16" 
+                                              TextColor="#Black"/>
 
                                     </FormattedString>
 
@@ -199,15 +184,21 @@
 
                     <StackLayout>
 
-                        <Frame BackgroundColor="#f0f1f5" WidthRequest="270" CornerRadius="20" HeightRequest="50">
+                        <Frame BackgroundColor="#f0f1f5" WidthRequest="280" CornerRadius="30" HeightRequest="70">
                             <Label>
                                 <Label.FormattedText>
 
                                     <FormattedString>
 
-                                        <Span Text="Liberdade é escolher onde receber o seu " FontSize="16" TextColor="Black"/>
-                                        <Span Text="Salário." FontSize="16" TextColor="#ffccff"/>
-                                        <Span Text=" Saiba mais..." FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                                        <Span Text="Seu saldo saldo rende 100% do CDI e fica disponíviel para usar quando quiser " 
+                                              FontSize="14" 
+                                              TextColor="Black"/>
+
+                                        <Span Text=" 
+                                              Colocar dinheiro" 
+                                              FontAttributes="Bold" 
+                                              FontSize="16"
+                                              TextColor="Black"/>
 
                                     </FormattedString>
 
@@ -278,161 +269,31 @@
             <StackLayout>
                 <BoxView HeightRequest="1" Color="#f0f1f5" Margin="0,0,10,-10"/>
                 <StackLayout Padding="25">
-                    
-                    <Grid RowDefinitions="25,50,*"
-                          ColumnDefinitions="*">
+                    <Grid RowDefinitions="25,55,*" ColumnDefinitions="*">
                         
-                     
-                        <Label Text="lalalalalala" 
-                               TextColor="Gray" 
+                        <Label Text="Mundo AspireBank"
                                FontAttributes="Bold" 
-                               FontSize="15"
-                               Grid.ColumnSpan="2"
-                               Grid.Row="2"/>
-                    </Grid>
-                </StackLayout>
-            </StackLayout>
-
-            <StackLayout>
-                <BoxView HeightRequest="1" Color="#f0f1f5" Margin="0,0,10,-10"/>
-                <StackLayout Padding="25">
-                    <Grid RowDefinitions="25,50,*"
-                          ColumnDefinitions="*">
-                        
-                        <Label Text="lalalalala"
-                               FontAttributes="Bold" 
-                               TextColor="Black" 
-                               FontSize="17"
-                               Grid.Row="1"
+                               TextColor="Black"
+                               FontSize="17" 
+                               Grid.Row="1" 
                                Margin="0,15"/>
-                        <ImageButton Source="arrowright.png"
-                                     HorizontalOptions="EndAndExpand"
-                                     CornerRadius="50"
-                                     Grid.Row="1" 
-                                     Grid.Column="1"
-                                     WidthRequest="20"
-                                     HeightRequest="20"
-                                     BackgroundColor="White"/>
-                        
-                        <Label Text="alalalall 2"
-                               TextColor="Gray"
-                               FontAttributes="Bold"
-                               FontSize="15"
-                               Grid.ColumnSpan="2"
-                               Grid.Row="2"/>
-                    </Grid>
-                </StackLayout>
-            </StackLayout>
-
-            <StackLayout>
-                <BoxView HeightRequest="1" Color="#f0f1f5" Margin="0,0,10,-10"/>
-                <StackLayout Padding="25">
-                    <Grid RowDefinitions="25,55,*" ColumnDefinitions="*">
-                        <Image Source="doar.png" HorizontalOptions="StartAndExpand" Grid.Row="0"/>
-                        <Label Text="Seguros" FontAttributes="Bold" TextColor="Black" FontSize="17" Grid.Row="1" Margin="0,15"/>
-                        <ImageButton Source="arrowright.png" HorizontalOptions="EndAndExpand" CornerRadius="50"
-                                     Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" BackgroundColor="White"/>
-                        <Label Text="Proteção para você cuidar do que importa." TextColor="Gray" FontAttributes="Bold" FontSize="15" Grid.ColumnSpan="2" Grid.Row="2"/>
-
-                        <StackLayout Grid.Row="3" Grid.ColumnSpan="2">
-                            <Button BackgroundColor="#f0f1f5" CornerRadius="10"
-                                    Text="Seguro de vida." FontSize="15" FontAttributes="Bold" TextColor="#820ad1"
-                                    ImageSource="seguro.png" TextTransform="None"/>
+           
+                        <Label Text="Entre no mundo AspireBank e descubra seus benefícios " TextColor="Gray" FontAttributes="Bold" FontSize="15" Grid.ColumnSpan="2" Grid.Row="2"/>
+                        <StackLayout Grid.Row="3" 
+                                     Grid.ColumnSpan="2">
+                            <Button BackgroundColor="#f0f1f5" 
+                                    CornerRadius="10"
+                                    Text="Acesse já"
+                                    FontSize="15" 
+                                    FontAttributes="Bold" 
+                                    TextColor="#7c127b"
+                                    ImageSource="seguro.png"
+                                    TextTransform="None"/>
 
                         </StackLayout>
                     </Grid>
                 </StackLayout>
             </StackLayout>
-
-            <StackLayout>
-                <BoxView HeightRequest="1" Color="#f0f1f5" Margin="0,0,10,-10"/>
-                <StackLayout Padding="25">
-                    <Grid RowDefinitions="25,55,*" ColumnDefinitions="*">
-                        <Image Source="shopping.png" HorizontalOptions="StartAndExpand" Grid.Row="0"/>
-                        <Label Text="Shopping" FontAttributes="Bold" TextColor="Black" FontSize="17" Grid.Row="1" Margin="0,15"/>
-                        <ImageButton Source="arrowright.png" HorizontalOptions="EndAndExpand" CornerRadius="50"
-                                     Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" BackgroundColor="White"/>
-                        <Label Text="Vantagens exclusivas das nossas marcas preferidas." TextColor="Gray" FontAttributes="Bold" FontSize="15" Grid.ColumnSpan="2" Grid.Row="2"/>
-                    </Grid>
-                </StackLayout>
-            </StackLayout>
-
-            <BoxView HeightRequest="1" Color="#f0f1f5" Margin="0,0,10,-10"/>
-
-            <StackLayout Padding="15">
-                <Grid RowDefinitions="25,55,*" ColumnDefinitions="*">
-                    <Label Text="Acessar benefícios" FontAttributes="Bold" TextColor="Black" FontSize="19" Grid.Row="0"/>
-
-                    <ScrollView Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Row="1">
-                        
-                        <StackLayout Orientation="Horizontal" Spacing="75">
-                            
-                            <Frame BackgroundColor="#f0f1f5"
-                                   HeightRequest="300"
-                                   Margin="0,15"
-                                   HorizontalOptions="Center"
-                                   WidthRequest="200"
-                                   CornerRadius="10" 
-                                   Padding="0">
-                                
-                                <StackLayout>
-                                    
-                                    <Image Source="nubank.png"
-                                           Aspect="AspectFit" 
-                                           VerticalOptions="Start"/>
-                                    
-                                    <StackLayout Padding="10">
-                                        <Label Text="Mundo ASPIREBANK"
-                                               FontSize="15" 
-                                               FontAttributes="Bold"
-                                               TextColor="Black"/>
-                                        
-                                        <Label Text="Quanto mais nos conectamos, mais voce ganha!" 
-                                               FontSize="15"
-                                               TextColor="Gray"/>
-                                        
-                                        <Button Text="Conhecer" 
-                                                TextTransform="None"
-                                                CornerRadius="35"
-                                                BackgroundColor="#ffccff" 
-                                                HorizontalOptions="Center"
-                                                HeightRequest="50"
-                                                WidthRequest="100"/>
-                                    </StackLayout>
-                                </StackLayout>
-                            </Frame>
-
-                            <Frame BackgroundColor="#f0f1f5" HeightRequest="350"
-                               Margin="0,15" HorizontalOptions="Center" WidthRequest="200" CornerRadius="10" Padding="0">
-                                <StackLayout>
-                                    <Image Source="nubank2.png" Aspect="AspectFit" VerticalOptions="Start"/>
-                                    <StackLayout Padding="10">
-                                        <Label Text="Construído pelos inconformados" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
-                                        <Label Text="Procuramos pessoas para simplificar o mundo..." FontSize="15" TextColor="Gray"/>
-                                        <Button Text="Conhecer" TextTransform="None" CornerRadius="35" BackgroundColor="#820ad1" 
-                                                 HorizontalOptions="Center" HeightRequest="45" WidthRequest="100" Grid.Row="2"/>
-                                    </StackLayout>
-                                </StackLayout>
-                            </Frame>
-
-                            <Frame BackgroundColor="#f0f1f5" HeightRequest="350"
-                               Margin="0,15" HorizontalOptions="Center" WidthRequest="200" CornerRadius="10" Padding="0">
-                                <StackLayout>
-                                    <Image Source="nubank3.png" Aspect="AspectFit" VerticalOptions="Start"/>
-                                    <StackLayout Padding="10">
-                                        <Label Text="Somos diferentes" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
-                                        <Label Text="Uma empresa de tecnologia com espírito jovem..." FontSize="15" TextColor="Gray"/>
-                                        <Button Text="Conhecer" TextTransform="None" CornerRadius="35" BackgroundColor="#820ad1" 
-                                                 HorizontalOptions="Center" HeightRequest="45" WidthRequest="100" VerticalOptions="End"/>
-                                    </StackLayout>
-                                </StackLayout>
-                            </Frame>
-
-                        </StackLayout>
-                    </ScrollView>
-                </Grid>
-            </StackLayout>
-
         </StackLayout>
     </ScrollView>
 </ContentPage>
