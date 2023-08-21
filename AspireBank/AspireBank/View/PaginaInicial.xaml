@@ -10,28 +10,21 @@
 
                 <StackLayout Orientation="Horizontal">
                     
-                    <ImageButton Source="user.png" 
-                                 Padding="10"
-                                 BackgroundColor="#9a23e8"
+                   <!---->
+                    <ImageButton x:Name="user"
+                                 Padding="5"
+                                 BackgroundColor="Black"
                                  CornerRadius="50" 
                                  HorizontalOptions="StartAndExpand"/>
-                    
-                    <ImageButton Source="eyecross.png" 
+
+                    <ImageButton Source="olhinhos.png" 
+                                 x:Name="olhinhos"
                                  Clicked="btnHide"
                                  Padding="10" 
-                                 BackgroundColor="#820ad1"
+                                 BackgroundColor="Black"
                                  CornerRadius="50"
-                                 x:Name="eyebutton"/>
+                                 />
                     
-                    <ImageButton Source="envelope.png"
-                                 Padding="10"
-                                 BackgroundColor="#820ad1"
-                                 CornerRadius="50"/>
-                    
-                    <ImageButton Source="dots.png"
-                                 Padding="10"
-                                 BackgroundColor="#820ad1"
-                                 CornerRadius="50"/>
                 </StackLayout>
                 
 
@@ -70,8 +63,8 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Padding="10">
 
                     <StackLayout>
-                        <ImageButton Source="pix.png" 
-                                     x:Name="pixx"
+                        <ImageButton Source="pixx.png" 
+                                     x:Name="pix"
                                      BackgroundColor="#7c127b "
                                      Padding="15"
                                      CornerRadius="50"
@@ -122,8 +115,10 @@
                     </StackLayout>
 
                     <StackLayout>
-                        <ImageButton Source="phone.png" 
-                                     BackgroundColor="#f0f1f5"
+                        <ImageButton Source="celular.png" 
+                                     x:Name="celulaaar"
+                                     BackgroundColor="#7c127b"
+  
                                      Padding="15" 
                                      CornerRadius="50" 
                                      WidthRequest="60"
@@ -141,17 +136,19 @@
                 </StackLayout>
             </ScrollView>
 
-            <StackLayout Margin="0,15">
+            <StackLayout Margin="6">
 
                 <Button Text="Meus Cartões"
-                        Padding="10,10,220,10"
-                        TextTransform="None" 
-                        HorizontalOptions="Center"
-                        BackgroundColor="#f0f1f5"
-                        ContentLayout="Left,10" 
-                        ImageSource="cartao.png"
-                        TextColor="Black"
-                        CornerRadius="10"/>
+                        Padding="15,10,10,10"
+                        FontAttributes="Italic"
+                        BorderColor="#7c127b"
+                        BorderWidth="1"
+                        CornerRadius="90"
+                        HeightRequest="40"
+                        WidthRequest="30"
+                        BackgroundColor="Transparent"  
+                        TextColor="#7c127b" 
+                        FontSize="14"/>
             </StackLayout>
 
             <ScrollView Orientation="Horizontal">
@@ -278,17 +275,19 @@
                                Grid.Row="1" 
                                Margin="0,15"/>
            
-                        <Label Text="Entre no mundo AspireBank e descubra seus benefícios " TextColor="Gray" FontAttributes="Bold" FontSize="15" Grid.ColumnSpan="2" Grid.Row="2"/>
+                        <Label Text="Entre no mundo AspireBank e descubra seus benefícios " TextColor="Black" FontAttributes="Italic" FontSize="15" Grid.ColumnSpan="2" Grid.Row="2"/>
                         <StackLayout Grid.Row="3" 
                                      Grid.ColumnSpan="2">
-                            <Button BackgroundColor="#f0f1f5" 
+                            <Button Text="Acessar benefícios" 
+                                    FontAttributes="Italic"
+                                    BorderColor="#7c127b"
+                                    BorderWidth="1"
                                     CornerRadius="10"
-                                    Text="Acesse já"
-                                    FontSize="15" 
-                                    FontAttributes="Bold" 
-                                    TextColor="#7c127b"
-                                    ImageSource="seguro.png"
-                                    TextTransform="None"/>
+                                    HeightRequest="40"
+                                    WidthRequest="50"
+                                    BackgroundColor="Transparent"  
+                                    TextColor="#7c127b" 
+                                    FontSize="14" />
 
                         </StackLayout>
                     </Grid>

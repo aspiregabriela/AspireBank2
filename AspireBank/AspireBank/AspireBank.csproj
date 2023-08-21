@@ -12,23 +12,43 @@
 
   <ItemGroup>
     <None Remove="Img\banco.png" />
+    <None Remove="Img\celular.png" />
     <None Remove="Img\copiaecola.png" />
+    <None Remove="Img\envelope.png" />
+    <None Remove="Img\interrogacao.png" />
+    <None Remove="Img\lala2.png" />
     <None Remove="Img\logo.png" />
     <None Remove="Img\meuscartoes.png" />
+    <None Remove="Img\olhinho.png" />
+    <None Remove="Img\olhinhos.png" />
     <None Remove="Img\pagar.png" />
     <None Remove="Img\pix.png" />
+    <None Remove="Img\pixx.png" />
     <None Remove="Img\qrcode.png" />
     <None Remove="Img\recarga.png" />
     <None Remove="Img\tranferencia.png" />
     <None Remove="Img\user.png" />
+    <None Remove="Img\user2.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Img\banco.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Img\celular.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Img\copiaecola.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\envelope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\interrogacao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\lala2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Img\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -36,16 +56,13 @@
     <EmbeddedResource Include="Img\meuscartoes.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Img\olhinhos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Img\pagar.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Img\pix.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Img\qrcode.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Img\user.png">
+    <EmbeddedResource Include="Img\pixx.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
