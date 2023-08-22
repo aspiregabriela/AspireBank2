@@ -100,9 +100,9 @@ namespace AspireBank.View
             }
         }
 
-        private void pagamento_Clicked(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new NavigationPage(new Pix());
-        }
+        //private void pagamento_Clicked(object sender, EventArgs e)
+        //{
+           // App.Current.MainPage = new NavigationPage(new Pix());
+        //}
     }
 }
