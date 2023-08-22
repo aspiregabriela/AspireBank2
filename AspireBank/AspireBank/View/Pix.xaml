@@ -27,51 +27,8 @@
 
             <StackLayout Orientation="Horizontal" Spacing="60" Grid.Row="3">
 
-                <StackLayout>
-                    <ImageButton Source="cobrar.png"  
-                                 Clicked="bntcobrar" 
-                                 WidthRequest="60" 
-                                 HeightRequest="60"
-                                 BackgroundColor="Beige"
-                                 Padding="15" 
-                                 CornerRadius="50"/>
-
-                    <Label TextColor="Black"
-                           FontSize="14"
-                           HorizontalOptions="Center" 
-                           Text="Transferir"/>
-                </StackLayout>
-
-                <StackLayout>
-
-                    <ImageButton Source="banco.png"
-                                 Clicked="bntbanco"
-                                 WidthRequest="60"
-                                 HeightRequest="60" 
-                                 BackgroundColor="#f0f1f5"
-                                 Padding="15" 
-                                 CornerRadius="50"/>
-
-                    <Label TextColor="Black" 
-                           FontSize="14"
-                           HorizontalOptions="Center" 
-                           Text="Copia e Cola"/>
-                </StackLayout>
-
-                <StackLayout>
-                    <ImageButton Source="btnqrcode.png"
-                                 Clicked="btnqrcode"
-                                 WidthRequest="60"
-                                 HeightRequest="60" 
-                                 BackgroundColor="#f0f1f5"
-                                 Padding="15" 
-                                 CornerRadius="50"/>
-
-                    <Label TextColor="Black" 
-                           FontSize="14"
-                           HorizontalOptions="Center" 
-                           Text="Ler QR code"/>
-                </StackLayout>
+               
+               
             </StackLayout>
         </Grid>
     </StackLayout>

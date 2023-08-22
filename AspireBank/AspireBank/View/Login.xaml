@@ -31,33 +31,30 @@
                 <StackLayout>
 
                     <Label Text="AspireBank" FontSize="Title"
-                           HorizontalOptions="Center" TextColor="#7c127b" FontAttributes="Bold"/>
+                           HorizontalOptions="Center" TextColor="#A35AF1" FontAttributes="Bold"/>
 
                     <Label Text="Usario:" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_usuario"/>
                     <Label Text="Senha:" FontAttributes="bold" TextColor="black"/>
                     <Entry IsPassword="True" x:Name="txt_senha"/>
-                    <Button Text="Entrar" TextColor="White" Clicked="Button_Clicked_1"   BackgroundColor="#7c127b" BorderColor="Black" CornerRadius="10"/>
+                    <Button Text="Entrar" TextColor="White" Clicked="Button_Clicked_1"   BackgroundColor="#A35AF1" BorderColor="Black" CornerRadius="10"/>
 
                     <Button Text="Não possui conta? Criar"
                             FontAttributes="Italic"
-                            BorderColor="#7c127b"
+                            BorderColor="#A35AF1"
                             BorderWidth="1"
                             CornerRadius="10"
                             HeightRequest="40"
                             WidthRequest="50"
                             BackgroundColor="Transparent"  
-                            TextColor="#7c127b" 
+                            TextColor="#A35AF1" 
                             FontSize="14" 
                     Clicked="Button_Clicked_3"/>
 
                 </StackLayout>
             </Frame>
 
-           
-
-
-
+     
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

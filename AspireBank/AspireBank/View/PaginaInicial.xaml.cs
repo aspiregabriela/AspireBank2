@@ -21,12 +21,12 @@ namespace AspireBank.View
         {
             InitializeComponent();
 
-            pagar.Source = ImageSource.FromResource("AspireBank.Img.pagar.png");
-            pix.Source = ImageSource.FromResource("AspireBank.Img.pixx.png");
-            banco.Source = ImageSource.FromResource("AspireBank.Img.banco.png");
-            user.Source= ImageSource.FromResource("AspireBank.Img.lala2.png");
+           // pagar.Source = ImageSource.FromResource("AspireBank.Img.pagar.png");
+           // piix.Source = ImageSource.FromResource("AspireBank.Img.pixx.png");
+           // banco.Source = ImageSource.FromResource("AspireBank.Img.banco.png");
+            
             olhinhos.Source=ImageSource.FromResource("AspireBank.Img.olhinho.png");
-            celulaaar.Source = ImageSource.FromResource("AspireBank.Img.celular.png");
+           // celulaaar.Source = ImageSource.FromResource("AspireBank.Img.celular.png");
 
             saldo = 1274.45;
             fatura = 78.87;
@@ -98,6 +98,11 @@ namespace AspireBank.View
                 LblSaldo.Text = saldo.ToString("C");
                 olhinhos.Source = "olhinho.png";
             }
+        }
+
+        private void pagamento_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new Pix());
         }
     }
 }

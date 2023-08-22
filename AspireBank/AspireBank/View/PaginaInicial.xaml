@@ -6,23 +6,16 @@
     <ScrollView>
         <StackLayout>
 
-            <StackLayout BackgroundColor="#7c127b" Padding="20" Spacing="20">
+            <StackLayout BackgroundColor="#A35AF1" Padding="20" Spacing="20">
 
                 <StackLayout Orientation="Horizontal">
                     
-                   <!---->
-                    <ImageButton x:Name="user"
-                                 Padding="5"
-                                 BackgroundColor="Black"
-                                 CornerRadius="50" 
-                                 HorizontalOptions="StartAndExpand"/>
-
                     <ImageButton Source="olhinhos.png" 
                                  x:Name="olhinhos"
                                  Clicked="btnHide"
                                  Padding="10" 
                                  BackgroundColor="Black"
-                                 CornerRadius="50"
+                                 CornerRadius="10"
                                  />
                     
                 </StackLayout>
@@ -60,79 +53,81 @@
             </StackLayout>
 
             <ScrollView Orientation="Horizontal">
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Padding="10">
+                <StackLayout Orientation="Horizontal" Margin="-4,-50,0,0">
+
+                    <Button CornerRadius="15"
+                            Text="Pix"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            x:Name="pagamento"
+                            Padding="60"
+                            Margin="12,50,20,10"
+                            Clicked="pagamento_Clicked">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#A35AF1" Offset="0.1" />
+                                <GradientStop Color="#7c127b" Offset="1.0" />
+                                <GradientStop Color="#7c127b" Offset="0.1" />
+                                <GradientStop Color="#7c127b" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
 
                     <StackLayout>
-                        <ImageButton Source="pixx.png" 
-                                     x:Name="pix"
-                                     BackgroundColor="#7c127b "
-                                     Padding="15"
-                                     CornerRadius="50"
-                                     WidthRequest="60"
-                                     HeightRequest="60"/>
-                        
-                        <Label TextColor="Black" 
-                               FontSize="14"
-                               HorizontalOptions="Center"
-                               FontAttributes="Bold"
-                               Text="Pix"/>
-                        
+                        <Button CornerRadius="15"
+                            Text="Transição"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            x:Name="Transição"
+                            Padding="60"
+                            Margin="12,50,20,10">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#A35AF1" Offset="0.1" />
+                                    <GradientStop Color="#7c127b" Offset="1.0" />
+                                    <GradientStop Color="#7c127b" Offset="0.1" />
+                                    <GradientStop Color="#7c127b" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
                     </StackLayout>
 
                     <StackLayout>
-                        <ImageButton Source="pagar.png"
-                                     x:Name="pagar"
-                                     BackgroundColor="#7c127b"
-                                     Padding="10" 
-                                     CornerRadius="50" 
-                                     WidthRequest="60"
-                                     HeightRequest="60"/>
-                        
-                        <Label TextColor="Black"
-                               FontSize="13" 
-                               HorizontalOptions="Center"
-                               FontAttributes="Bold"
-                               Text="Transferir"/>
-                        
+                        <Button CornerRadius="15"
+                            Text="QrCode"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            x:Name="Qrcode"
+                            Padding="60"
+                            Margin="12,50,20,10">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#A35AF1" Offset="0.1" />
+                                    <GradientStop Color="#7c127b" Offset="1.0" />
+                                    <GradientStop Color="#7c127b" Offset="0.1" />
+                                    <GradientStop Color="#7c127b" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
                     </StackLayout>
                     <StackLayout>
-                        <ImageButton Source="banco.png"
-                                     x:Name="banco"
-                                     BackgroundColor="#7c127b"
-                                     Padding="10" 
-                                     CornerRadius="50" 
-                                     WidthRequest="60"
-                                     HeightRequest="60"/>
-
-                        <Label TextColor="Black"
-                               FontSize="13" 
-                               Padding="10"
-                               WidthRequest="60"
-                               HorizontalOptions="Center"
-                               FontAttributes="Bold"
-                               Text="Emprestimos "/>
-
+                        <Button CornerRadius="15"
+                            Text="recarga"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            x:Name="regarga"
+                            Padding="60"
+                            Margin="12,50,20,10">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#A35AF1" Offset="0.1" />
+                                    <GradientStop Color="#7c127b" Offset="1.0" />
+                                    <GradientStop Color="#7c127b" Offset="0.1" />
+                                    <GradientStop Color="#7c127b" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
                     </StackLayout>
-
-                    <StackLayout>
-                        <ImageButton Source="celular.png" 
-                                     x:Name="celulaaar"
-                                     BackgroundColor="#7c127b"
-  
-                                     Padding="15" 
-                                     CornerRadius="50" 
-                                     WidthRequest="60"
-                                     HeightRequest="60"/>
-                        
-                        <Label TextColor="Black"
-                               FontSize="14"
-                               HorizontalOptions="Center"
-                               FontAttributes="Bold"
-                               Text="Recarga"/>
-                    </StackLayout>
-
-                    
-
                 </StackLayout>
             </ScrollView>
 
@@ -141,13 +136,13 @@
                 <Button Text="Meus Cartões"
                         Padding="15,10,10,10"
                         FontAttributes="Italic"
-                        BorderColor="#7c127b"
+                        BorderColor="#A35AF1"
                         BorderWidth="1"
                         CornerRadius="90"
-                        HeightRequest="40"
-                        WidthRequest="30"
+                        HeightRequest="50"
+                        WidthRequest="40"
                         BackgroundColor="Transparent"  
-                        TextColor="#7c127b" 
+                        TextColor="#A35AF1" 
                         FontSize="14"/>
             </StackLayout>
 
@@ -164,12 +159,10 @@
                                               FontSize="14"
                                               TextColor="Black"/>
                                         
-                                        <Span Text="
-                                              
-                                              Fazer Trasferencia "
+                                        <Span Text=" Fazer Trasferencia "
                                               FontAttributes="Bold" 
                                               FontSize="16" 
-                                              TextColor="#Black"/>
+                                              TextColor="#A35AF1"/>
 
                                     </FormattedString>
 
@@ -194,8 +187,8 @@
                                         <Span Text=" 
                                               Colocar dinheiro" 
                                               FontAttributes="Bold" 
-                                              FontSize="16"
-                                              TextColor="Black"/>
+                                             FontSize="16"
+                                              TextColor="#A35AF1"/>
 
                                     </FormattedString>
 
@@ -280,13 +273,13 @@
                                      Grid.ColumnSpan="2">
                             <Button Text="Acessar benefícios" 
                                     FontAttributes="Italic"
-                                    BorderColor="#7c127b"
+                                    BorderColor="#A35AF1"
                                     BorderWidth="1"
                                     CornerRadius="10"
                                     HeightRequest="40"
                                     WidthRequest="50"
                                     BackgroundColor="Transparent"  
-                                    TextColor="#7c127b" 
+                                    TextColor="#A35AF1" 
                                     FontSize="14" />
 
                         </StackLayout>
@@ -294,5 +287,5 @@
                 </StackLayout>
             </StackLayout>
         </StackLayout>
-    </ScrollView>
-</ContentPage>
+     </ScrollView>
+ </ContentPage>
