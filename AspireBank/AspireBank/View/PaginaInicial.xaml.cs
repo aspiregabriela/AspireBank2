@@ -69,7 +69,7 @@ namespace AspireBank.View
                 {
                     App.Current.Properties.Remove("usuario_logado");
 
-                    App.Current.MainPage = new Login();
+                    App.Current.MainPage = new PaginaInicial();
                 }
                 else throw new Exception("Falha ao fazer logout");
 
@@ -100,9 +100,24 @@ namespace AspireBank.View
             }
         }
 
-        //private void pagamento_Clicked(object sender, EventArgs e)
-        //{
-           // App.Current.MainPage = new NavigationPage(new Pix());
-        //}
+        private void pagamento_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new Pix());
+        }
+
+        private  void Transição_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new Transição());
+        }
+
+        private void Qrcode_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new QRcode());
+        }
+
+        private void regarga_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new Recarga ());
+        }
     }
 }

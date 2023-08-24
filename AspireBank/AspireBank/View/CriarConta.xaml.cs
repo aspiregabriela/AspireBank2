@@ -26,16 +26,16 @@ namespace AspireBank.View
             try
             {
 
-                await DataServiceCorrentista.Cadastrar(new Correntista
+                Model.Correntista c = await DataServiceCorrentista.Cadastrar(new Correntista
                 {
-                    nome = txt_nome.Text,
-                    data_nasc = txt_dataNasc.Date,
-                    cpf = txt_cpf.Text,
-                    senha = txt_senha.Text
+                    Nome = txt_nome.Text,
+                    Data_Nasc = txt_dataNasc.Date,
+                    Cpf = txt_cpf.Text,
+                    Senha = txt_senha.Text
                 });
 
                 await DisplayAlert("Sucesso!", "Você foi cadastrado.", "OK");
-                await Navigation.PushAsync(new MainPage());
+                await Navigation.PushAsync(new Login());
 
             }
             catch (Exception ex)

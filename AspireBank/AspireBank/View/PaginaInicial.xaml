@@ -62,7 +62,7 @@
                             x:Name="pagamento"
                             Padding="60"
                             Margin="12,50,20,10"
-                            Clicked="pagamento_Clicked">
+                           Clicked="pagamento_Clicked">
                         <Button.Background>
                             <LinearGradientBrush>
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
@@ -80,7 +80,8 @@
                             FontAttributes="Bold"
                             x:Name="Transição"
                             Padding="60"
-                            Margin="12,50,20,10">
+                            Margin="12,50,20,10"
+                                Clicked="Transição_Clicked">
                             <Button.Background>
                                 <LinearGradientBrush>
                                     <GradientStop Color="#A35AF1" Offset="0.1" />
@@ -99,7 +100,8 @@
                             FontAttributes="Bold"
                             x:Name="Qrcode"
                             Padding="60"
-                            Margin="12,50,20,10">
+                            Margin="12,50,20,10"
+                                Clicked="Qrcode_Clicked">
                             <Button.Background>
                                 <LinearGradientBrush>
                                     <GradientStop Color="#A35AF1" Offset="0.1" />
@@ -117,7 +119,8 @@
                             FontAttributes="Bold"
                             x:Name="regarga"
                             Padding="60"
-                            Margin="12,50,20,10">
+                            Margin="12,50,20,10"
+                                Clicked="regarga_Clicked">
                             <Button.Background>
                                 <LinearGradientBrush>
                                     <GradientStop Color="#A35AF1" Offset="0.1" />
