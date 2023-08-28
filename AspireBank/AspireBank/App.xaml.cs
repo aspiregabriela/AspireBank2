@@ -15,10 +15,10 @@ namespace AspireBank
         {
             InitializeComponent();
 
-            /*if (Properties.ContainsKey("usuario_logado"))
+            if (Properties.ContainsKey("usuario_logado"))
                 MainPage = new NavigationPage(new View.PaginaInicial());
             else
-                MainPage = new View.Login();*/
+                MainPage = new View.Login();
         }
 
         protected override void OnStart()

@@ -29,7 +29,7 @@
                             Text="Continuar" 
                             TextColor="Black"
                             FontAttributes="Bold"
-                            Clicked="continuae3"/>
+                            Clicked="Button_Clicked"/>
 
 
                 </StackLayout>

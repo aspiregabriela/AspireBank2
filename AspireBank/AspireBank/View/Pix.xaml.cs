@@ -26,9 +26,7 @@ namespace AspireBank.View
             Navigation.PopAsync();
         }
 
-        
-
-
+       
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(( new PixEfetuado()));

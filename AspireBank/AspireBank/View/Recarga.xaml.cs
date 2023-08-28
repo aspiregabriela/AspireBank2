@@ -19,12 +19,12 @@ namespace AspireBank.View
 
         private void setaesquerda_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PopAsync();
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync((new RecargaEfetuada()));
         }
     }
 }
