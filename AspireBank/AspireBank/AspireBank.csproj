@@ -23,12 +23,22 @@
     <None Remove="Img\olhinhos.png" />
     <None Remove="Img\pagar.png" />
     <None Remove="Img\pix.png" />
+    <None Remove="Img\pix2.png" />
+    <None Remove="Img\pix3.png" />
     <None Remove="Img\pixx.png" />
     <None Remove="Img\qrcode.png" />
+    <None Remove="Img\QRCode2.png" />
     <None Remove="Img\recarga.png" />
+    <None Remove="Img\recarga2.png" />
+    <None Remove="Img\setaesquerda.png" />
     <None Remove="Img\tranferencia.png" />
+    <None Remove="Img\transição2.png" />
     <None Remove="Img\user.png" />
     <None Remove="Img\user2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="Img\pix2.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +46,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Img\olhinhos.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\pix3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\QRCode2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\recarga2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\setaesquerda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\transição2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
@@ -57,6 +82,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\Pix.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\PixEfetuado.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\QRcode.xaml">

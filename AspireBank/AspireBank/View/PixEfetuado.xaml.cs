@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace AspireBank.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Transição : ContentPage
+    public partial class PixEfetuado : ContentPage
     {
-        public Transição()
+        public PixEfetuado()
         {
             InitializeComponent();
-        }
-
-        private void setaesquerda_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

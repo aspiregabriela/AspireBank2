@@ -16,5 +16,15 @@ namespace AspireBank.View
         {
             InitializeComponent();
         }
+
+        private void setaesquerda_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

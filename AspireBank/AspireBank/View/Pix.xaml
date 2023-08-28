@@ -6,11 +6,10 @@
              BackgroundColor="#white">
 
     <StackLayout>
-
         <Frame HasShadow="True">
-           <!--<ImageButton Source="cruz.png"  Clicked="btnBack"
-                         HorizontalOptions="Start" BackgroundColor="White"/> -->
+            <ImageButton Source="setaesquerda.png" x:Name="setaesquerda" Clicked="voltar" HorizontalOptions="Start"/>
         </Frame>
+
         <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
 
             <Label Text="Área Pix."
@@ -26,10 +25,19 @@
                    TextColor="Black" FontSize="21" Grid.Row="2"/>
 
             <StackLayout Orientation="Horizontal" Spacing="60" Grid.Row="3">
-
-               
-               
+                <BoxView HeightRequest="1"
+                              Color="#f0f1f5"/>
+                <Button BackgroundColor="White" 
+                            Text="Continuar" 
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                           Clicked="Button_Clicked"/>
             </StackLayout>
+
+
+
+
+
         </Grid>
     </StackLayout>
 </ContentPage>

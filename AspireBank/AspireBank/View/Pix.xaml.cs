@@ -14,39 +14,24 @@ namespace AspireBank.View
     {
         public Pix()
         {
+            setaesquerda.Source = ImageSource.FromResource("AspireBank.Img.setaesquerda.png");
+
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void ImageButton_Clicked(object sender, EventArgs e)
+        private void voltar(object sender, EventArgs e)
         {
-
+            Navigation.PopAsync();
         }
 
-        private void ImageButton_Clicked_1(object sender, EventArgs e)
+        
+
+
+        private void Button_Clicked(object sender, EventArgs e)
         {
-
-        }
-
-        private void bntcobrar(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bntbanco(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btncopiaecola(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnqrcode(object sender, EventArgs e)
-        {
-
+            Navigation.PushAsync(( new PixEfetuado()));
         }
     }
 }
