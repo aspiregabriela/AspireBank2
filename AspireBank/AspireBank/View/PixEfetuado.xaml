@@ -4,9 +4,48 @@
              x:Class="AspireBank.View.PixEfetuado">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Frame   CornerRadius="30"
+                     BackgroundColor="White"
+                     HeightRequest="350"
+                     Margin="15,0,15,0"
+                     VerticalOptions="Center">
+                <StackLayout>
+
+                    <Label Text="Pix Efetuado!" FontSize="Title"
+                           HorizontalOptions="Center" TextColor="#A35AF1" FontAttributes="Bold"/>
+
+                    <Label Text="Pix Efetuado para fulana de tal" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="lalalala" FontAttributes="Bold" TextColor="Black"/>
+
+
+                    <Button Text="Fazer um novo pix?"
+                            FontAttributes="Italic"
+                            BorderColor="#A35AF1"
+                            BorderWidth="1"
+                            CornerRadius="10"
+                            HeightRequest="40"
+                            WidthRequest="50"
+                            BackgroundColor="Transparent"  
+                            TextColor="#A35AF1" 
+                            FontSize="14" 
+                            Clicked="novopix"
+                    />
+                    <Button Text="Voltar para pagina inicial?"
+                            FontAttributes="Italic"
+                            BorderColor="#A35AF1"
+                            BorderWidth="1"
+                            CornerRadius="10"
+                            HeightRequest="40"
+                            WidthRequest="50"
+                            BackgroundColor="Transparent"  
+                            TextColor="#A35AF1" 
+                            FontSize="14" 
+                            Clicked="voltar"
+                            
+                    />
+
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

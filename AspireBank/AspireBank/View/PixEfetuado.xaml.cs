@@ -16,5 +16,15 @@ namespace AspireBank.View
         {
             InitializeComponent();
         }
+
+        private void novopix(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltar(object sender, EventArgs e)
+        {
+
+        }
     }
 }
