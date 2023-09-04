@@ -20,7 +20,29 @@
                         <Image Aspect="AspectFill" x:Name="img_qr"/>
                     </Frame>
 
-                    <Button Clicked="Button_Clicked_1" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Black" BorderWidth="3" Text="Gere seu QR" HorizontalOptions="CenterAndExpand" FontSize="Title" TextColor="Black" FontAttributes="Bold"/>
+                    <Button Clicked="Button_Clicked_1" 
+                            BackgroundColor="Transparent" 
+                            CornerRadius="10"
+                            BorderColor="#A35AF1"
+                            BorderWidth="1"
+                            Text="Gere seu QR"
+                            HorizontalOptions="CenterAndExpand"
+                            FontSize="Title" 
+                            TextColor="#A35AF1"
+                            FontAttributes="Italic"/>
+
+                    <Button Text="Não possui conta? Criar"
+                            Clicked="Button_Clicked"
+                            FontAttributes="Italic"
+                            BorderColor="#A35AF1"
+                            BorderWidth="1"
+                            CornerRadius="10"
+                            HeightRequest="40"
+                            WidthRequest="50"
+                            BackgroundColor="Transparent"  
+                            TextColor="#A35AF1" 
+                            FontSize="14" />
+
 
                 </StackLayout>
             </Frame>
