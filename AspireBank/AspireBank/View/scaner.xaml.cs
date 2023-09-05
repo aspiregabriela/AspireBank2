@@ -16,19 +16,19 @@ namespace AspireBank.View
         public scaner()
         {
             InitializeComponent();
-           // zxing.OnScanResult += (result) => Device.BeginInvokeOnMainThread(() => { lblResult.Text = result.Text; });
+            zxing.OnScanResult += (result) => Device.BeginInvokeOnMainThread(() => { lblResult.Text = result.Text; });
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            //zxing.IsScanning = true;
+            zxing.IsScanning = true;
         }
 
         protected override void OnDisappearing()
         {
-           // zxing.IsScanning = false;
+            zxing.IsScanning = false;
 
             base.OnDisappearing();
         }
