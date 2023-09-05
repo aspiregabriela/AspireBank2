@@ -39,6 +39,7 @@ namespace AspireBank.Service
         }
         protected static async Task<string> PostDataToService(string json_object, string rota)
         {
+          
             string json_response;
 
             string uri = server + rota;
@@ -61,6 +62,10 @@ namespace AspireBank.Service
                 }
                 else
                     throw new Exception(DecodeServerError(response.StatusCode));
+
+                Console.WriteLine("_______________________________");
+                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                Console.WriteLine("_______________________________");
             }
 
             return json_response;

@@ -34,7 +34,7 @@ namespace AspireBank.View
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-
+            App.Current.MainPage = new NavigationPage(new scaner());
         }
     }
 }
