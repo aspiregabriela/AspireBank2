@@ -33,8 +33,8 @@
                     <Label Text="AspireBank" FontSize="Title"
                            HorizontalOptions="Center" TextColor="#A35AF1" FontAttributes="Bold"/>
 
-                    <Label Text="Usuario:" FontAttributes="Bold" TextColor="Black"/>
-                    <Entry x:Name="txt_usuario"/>
+                    <Label Text="CPF:" FontAttributes="Bold" TextColor="Black"/>
+                    <Entry x:Name="txt_cpf"/>
                     <Label Text="Senha:" FontAttributes="bold" TextColor="black"/>
                     <Entry IsPassword="True" x:Name="txt_senha"/>
                     <Button Text="Entrar" TextColor="White" Clicked="Button_Clicked_1"   BackgroundColor="#A35AF1" BorderColor="Black" CornerRadius="10"/>

@@ -11,13 +11,15 @@ namespace AspireBank.Service
         {
             public static async Task<Correntista> Cadastrar(Correntista c)
             {
-                var json_to_send = JsonConvert.SerializeObject(c);
+                var json_a_enviar = JsonConvert.SerializeObject(c);
 
-                string json = await DataService.PostDataToService(json_to_send, "/correntista/save");
+                string json = await DataService.PostDataToService(json_a_enviar, "/correntista/save");
 
                 Console.WriteLine("_____________________________________________");
-                Console.WriteLine(json);
+                Console.WriteLine("DADOS QUE FORAM DIGITADOS PELO USUÁRIOS E JÁ CONVERTIDOS EM JSON: ");
+                Console.WriteLine(json_a_enviar);
                 Console.WriteLine("_____________________________________________");
+
 
                 Correntista correntista = JsonConvert.DeserializeObject<Correntista>(json);
 
@@ -26,9 +28,13 @@ namespace AspireBank.Service
 
         public static async Task<Correntista> Autorizar(Correntista c)
         {
-            var json_to_send = JsonConvert.SerializeObject(c);
+            var json_a_enviar = JsonConvert.SerializeObject(c);
 
             string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.Cpf, c.Senha));
+
+            Console.WriteLine("_____________________________________________");
+            Console.WriteLine(json);
+            Console.WriteLine("_____________________________________________");
 
             Correntista correntista = new Correntista();
             if (json != "false")
