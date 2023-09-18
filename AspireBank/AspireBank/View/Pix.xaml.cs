@@ -14,7 +14,7 @@ namespace AspireBank.View
     {
         public Pix()
         {
-            setaesquerda.Source = ImageSource.FromResource("AspireBank.Img.setaesquerda.png");
+           // setaesquerda.Source = ImageSource.FromResource("AspireBank.Img.setaesquerda.png");
 
             InitializeComponent();
 

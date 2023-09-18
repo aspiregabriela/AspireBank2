@@ -21,7 +21,7 @@ namespace AspireBank.View
         {
             InitializeComponent();
 
-            pix2.Source= ImageSource.FromResource("AspireBank.Img.pix2.png");
+            //pix2.Source= ImageSource.FromResource("AspireBank.Img.pix2.png");
             transição2.Source = ImageSource.FromResource("AspireBank.Img.transição2.png");
             QRCode2.Source = ImageSource.FromResource("AspireBank.Img.QRCode2.png");
             recarga2.Source = ImageSource.FromResource("AspireBank.Img.recarga2.png");

@@ -52,23 +52,22 @@
 
             </StackLayout>
 
-            <ScrollView Orientation="Horizontal">
+            <ScrollView Orientation="Horizontal" HeightRequest="100">
                 <StackLayout Orientation="Horizontal" Margin="-4,-50,0,0">
-                    <Frame>
+                    <Frame HeightRequest="100">
                         <Frame.Background>
                             <LinearGradientBrush>
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
-                                <GradientStop Color="#7c127b" Offset="0.1" />
-                                <GradientStop Color="#7c127b" Offset="1.0" />
                             </LinearGradientBrush>
                         </Frame.Background>
-                        <ImageButton CornerRadius="15"
-                                 x:Name="pix2"
-                                 Padding="60"
-                                 Margin="12,50,20,10"
+                        <Button  CornerRadius="15"
+                                  x:Name="pix2"
+                                  Padding="60"
+                                  Margin="12,50,20,10"
+                                
                                  Clicked="pagamento_Clicked">
-                        </ImageButton>
+                         </Button>
                     </Frame>
                 
 
@@ -77,8 +76,7 @@
                             <LinearGradientBrush>
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
-                                <GradientStop Color="#7c127b" Offset="0.1" />
-                                <GradientStop Color="#7c127b" Offset="1.0" />
+                                
                             </LinearGradientBrush>
 
                         </Frame.Background>
@@ -96,8 +94,7 @@
                             <LinearGradientBrush>
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
-                                <GradientStop Color="#7c127b" Offset="0.1" />
-                                <GradientStop Color="#7c127b" Offset="1.0" />
+                               
                             </LinearGradientBrush>
                         </Frame.Background>
 
@@ -113,8 +110,7 @@
                             <LinearGradientBrush>
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
-                                <GradientStop Color="#7c127b" Offset="0.1" />
-                                <GradientStop Color="#7c127b" Offset="1.0" />
+                               
                             </LinearGradientBrush>
 
 

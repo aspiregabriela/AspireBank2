@@ -29,12 +29,12 @@ namespace AspireBank.View
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(teste, QRCodeGenerator.ECCLevel.Q);
             PngByteQRCode qRCode = new PngByteQRCode(qrCodeData);
             byte[] qrCodeBytes = qRCode.GetGraphic(20);
-            img_qr.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
+            setaesquerda.Source = ImageSource.FromStream(() => new MemoryStream(qrCodeBytes));
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new scaner());
+            App.Current.MainPage = new NavigationPage(new PaginaInicial());
         }
     }
 }
