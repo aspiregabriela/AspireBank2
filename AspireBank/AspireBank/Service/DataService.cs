@@ -73,9 +73,9 @@ namespace AspireBank.Service
                 else
                     throw new Exception(DecodeServerError(response.StatusCode));
 
-                Console.WriteLine("_______________________________");
-                Console.WriteLine(response.Content.ReadAsStringAsync().Result);
-                Console.WriteLine("_______________________________");
+                //Console.WriteLine("_______________________________");
+                //Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+                //Console.WriteLine("_______________________________");
             }
 
             return json_response;

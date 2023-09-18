@@ -30,11 +30,11 @@ namespace AspireBank.Service
         {
             var json_a_enviar = JsonConvert.SerializeObject(c);
 
-            string json = await DataService.GetDataFromService(String.Format("/correntista/entrar?cpf={0}&senha={1}", c.Cpf, c.Senha));
+            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/entrar");
 
-            Console.WriteLine("_____________________________________________");
-            Console.WriteLine(json);
-            Console.WriteLine("_____________________________________________");
+            //Console.WriteLine("_____________________________________________");
+            //Console.WriteLine(json);
+            //Console.WriteLine("_____________________________________________");
 
             Correntista correntista = new Correntista();
             if (json != "false")

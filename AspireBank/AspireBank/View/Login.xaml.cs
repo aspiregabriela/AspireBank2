@@ -51,9 +51,9 @@ namespace AspireBank.View
                   {
                       App.DadosCorrentista = c;
 
-                      await Navigation.PushAsync(new PaginaInicial());
+                     // await Navigation.PushAsync(new PaginaInicial());
 
-                      App.Current.MainPage = new PaginaInicial();
+                      App.Current.MainPage = new NavigationPage(new PaginaInicial());
                   }
                   else
                   {
