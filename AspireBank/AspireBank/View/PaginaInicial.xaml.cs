@@ -22,9 +22,9 @@ namespace AspireBank.View
             InitializeComponent();
 
             //pix2.Source= ImageSource.FromResource("AspireBank.Img.pix2.png");
-            transição2.Source = ImageSource.FromResource("AspireBank.Img.transição2.png");
-            QRCode2.Source = ImageSource.FromResource("AspireBank.Img.QRCode2.png");
-            recarga2.Source = ImageSource.FromResource("AspireBank.Img.recarga2.png");
+           // transição2.Source = ImageSource.FromResource("AspireBank.Img.transição2.png");
+            //QRCode2.Source = ImageSource.FromResource("AspireBank.Img.QRCode2.png");
+          //  recarga2.Source = ImageSource.FromResource("AspireBank.Img.recarga2.png");
 
             olhinhos.Source=ImageSource.FromResource("AspireBank.Img.olhinho.png");
           
@@ -119,6 +119,11 @@ namespace AspireBank.View
         private void regarga_Clicked(object sender, EventArgs e)
         {
             App.Current.MainPage = new NavigationPage(new Recarga ());
+        }
+
+        private void meuscartoes (object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new Cartoes());
         }
     }
 }

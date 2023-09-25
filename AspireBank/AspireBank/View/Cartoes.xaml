@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AspireBank.View.Cartoes">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Button Text="⬅"
+                    FontSize="30"
+                    TextColor="White" 
+                    BackgroundColor="Transparent"
+                    Clicked="Button_Clicked"
+                    HorizontalOptions="Start"
+                    VerticalOptions="StartAndExpand"/> -->
+           
+
+            <ScrollView Orientation="Vertical">
+                <StackLayout Orientation="Vertical" >
+                    <Label Text=" Meus Cartões:" 
+                           FontAttributes="Bold"
+                           TextColor="Black" 
+                           FontSize="20"
+                           Padding="7"
+                           />
+                    <Button CornerRadius="10"
+                            x:Name="UM"
+                            Text="Cartão 1"
+                            TextColor="White"
+                            FontAttributes="Bold"                
+                            Padding="60"
+                            Margin="12,50,20,10">
+                        <Button.Background>
+
+                            <LinearGradientBrush>
+
+                                <GradientStop Color="#A35AF1" Offset="0.1" />
+                                <GradientStop Color="#7c127b" Offset="1.0" />
+
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Button CornerRadius="15"
+                            x:Name="DOIS"
+                            Text="Cartão 2"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                                               
+                            Padding="55"
+                            Margin="12,50,20,10">
+                        <Button.Background>
+
+                            <LinearGradientBrush>
+
+                                <GradientStop Color="#A35AF1" Offset="0.1" />
+                                <GradientStop Color="#7c127b" Offset="1.0" />
+
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Button CornerRadius="15"
+                            x:Name="TRES"
+                            Text="Cartão 3"
+                            TextColor="White"
+                            FontAttributes="Bold"                                
+                                                     
+                            Padding="60"
+                            Margin="12,50,20,10">
+                        <Button.Background>
+
+                            <LinearGradientBrush>
+
+                                <GradientStop Color="#A35AF1" Offset="0.1" />
+                                <GradientStop Color="#7c127b" Offset="1.0" />
+
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button CornerRadius="15"
+                            x:Name="quatro"
+                            Text="Cartão 4"
+                            TextColor="White"
+                            FontAttributes="Bold"                                 
+                            Padding="60"
+                            Margin="12,50,20,10">
+                        <Button.Background>
+
+                            <LinearGradientBrush>
+
+                                <GradientStop Color="#A35AF1" Offset="0.1" />
+                                <GradientStop Color="#7c127b" Offset="1.0" />
+
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

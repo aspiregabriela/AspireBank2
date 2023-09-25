@@ -11,6 +11,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="View\MeusCartooes.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="View\MeusCartooes.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Img\banco.png" />
     <None Remove="Img\celular.png" />
     <None Remove="Img\copiaecola.png" />
@@ -75,6 +83,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="View\Cartoes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\CriarConta.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

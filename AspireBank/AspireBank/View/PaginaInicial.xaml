@@ -53,82 +53,90 @@
             </StackLayout>
 
             <ScrollView Orientation="Horizontal" HeightRequest="100">
-                <StackLayout Orientation="Horizontal" Margin="-4,-50,0,0">
-                    <Frame HeightRequest="100">
-                        <Frame.Background>
+                <StackLayout Orientation="Horizontal"
+                             Margin="-4,-50,0,0">
+
+                    <Button   CornerRadius="11"
+                              x:Name="pix2"
+                              Text="Pix"
+                              TextColor="White"
+                              Padding="0"
+                              Margin="12,50,20,10"
+                              Clicked="pagamento_Clicked">
+
+                        <Button.Background>
                             <LinearGradientBrush>
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
                             </LinearGradientBrush>
-                        </Frame.Background>
-                        <Button  CornerRadius="15"
-                                  x:Name="pix2"
-                                  Padding="60"
-                                  Margin="12,50,20,10"
-                                
-                                 Clicked="pagamento_Clicked">
-                         </Button>
-                    </Frame>
-                
 
-                    <Frame>
-                        <Frame.Background>
+                        </Button.Background>
+                    </Button>
+
+                    <Button CornerRadius="11"
+                            x:Name="transição2"
+                            Text="Transição"
+                            TextColor="White"
+                            Padding="0"
+                            Margin="12,50,20,10"
+                            Clicked="Transição_Clicked">
+
+
+                        <Button.Background>
+
                             <LinearGradientBrush>
+
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
-                                
+
                             </LinearGradientBrush>
 
-                        </Frame.Background>
-                        <ImageButton CornerRadius="15"
-                                     x:Name="transição2"
-                                     Padding="60"
-                                     Margin="12,50,20,10"
-                                     Clicked="Transição_Clicked">
-                            
-                        </ImageButton>
-                    </Frame>
+                        </Button.Background>
+                    </Button>
 
-                    <Frame>
-                        <Frame.Background>
-                            <LinearGradientBrush>
+                    <Button CornerRadius="11"
+                                 x:Name="QRCode2"
+                                 Text="QRCode"
+                                 TextColor="White"
+                                 Padding="0"
+                                 Margin="12,50,20,10"
+                                 Clicked="Qrcode_Clicked" >
+
+                        <Button.Background>
+
+                             <LinearGradientBrush>
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
-                               
-                            </LinearGradientBrush>
-                        </Frame.Background>
 
-                        <ImageButton CornerRadius="15"
-                                     x:Name="QRCode2"
-                                     Padding="60"
-                                     Margin="12,50,20,10"
-                                     Clicked="Qrcode_Clicked" />
-                    </Frame>
-                    
-                    <Frame>
-                        <Frame.Background>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+                    <Button CornerRadius="11"
+                             x:Name="recarga2"
+                             Text="Regarga"
+                             TextColor="White"
+                             Padding="0"
+                             Margin="12,50,20,10"
+                             Clicked="regarga_Clicked">
+                        <Button.Background>
+
+
                             <LinearGradientBrush>
+
                                 <GradientStop Color="#A35AF1" Offset="0.1" />
                                 <GradientStop Color="#7c127b" Offset="1.0" />
-                               
+
                             </LinearGradientBrush>
-
-
-                        </Frame.Background>
-                        <ImageButton CornerRadius="15"
-                                     x:Name="recarga2"
-                                     Padding="60"
-                                     Margin="12,50,20,10"
-                                     Clicked="regarga_Clicked">
-                            
-                        </ImageButton>
-                    </Frame>
+                        </Button.Background>
+                    </Button>
                 </StackLayout>
             </ScrollView>
 
             <StackLayout Margin="6">
 
                 <Button Text="Meus Cartões"
+                        Clicked="meuscartoes"
                         Padding="15,10,10,10"
                         FontAttributes="Italic"
                         BorderColor="#A35AF1"
@@ -139,6 +147,8 @@
                         BackgroundColor="Transparent"  
                         TextColor="#A35AF1" 
                         FontSize="14"/>
+
+
             </StackLayout>
 
             <ScrollView Orientation="Horizontal">
