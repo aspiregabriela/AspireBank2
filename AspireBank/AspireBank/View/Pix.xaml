@@ -6,8 +6,11 @@
              BackgroundColor="#white">
 
     <StackLayout>
-        <Frame HasShadow="True">
-            <ImageButton Source="setaesquerda.png" x:Name="setaesquerda" Clicked="voltar" HorizontalOptions="Start"/>
+        <Frame CornerRadius="30" 
+               BackgroundColor="White"
+               HeightRequest="350"
+               Margin="15,0,15,0"
+               VerticalOptions="Center">
         </Frame>
 
         <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
@@ -30,8 +33,10 @@
                 <Button BackgroundColor="White" 
                             Text="Continuar" 
                             TextColor="Black"
-                            FontAttributes="Bold"
-                           Clicked="Button_Clicked"/>
+                            FontAttributes="Bold">
+                    
+                </Button>
+                           <!-- Clicked="Button_Clicked"/>-->
             </StackLayout>
 
 

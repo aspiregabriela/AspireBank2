@@ -21,15 +21,16 @@ namespace AspireBank.View
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void voltar(object sender, EventArgs e)
+       
+
+        private void Button_Clicked_3(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            App.Current.MainPage = new NavigationPage(new PaginaInicial());
         }
 
-       
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Button_Clicked_4(object sender, EventArgs e)
         {
-            Navigation.PushAsync(( new PixEfetuado()));
+            Navigation.PushAsync((new PixEfetuado()));
         }
     }
 }
