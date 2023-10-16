@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Img\NovaPasta\**" />
+    <EmbeddedResource Remove="Img\NovaPasta\**" />
+    <None Remove="Img\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="View\MeusCartooes.xaml.cs" />
   </ItemGroup>
 
@@ -26,6 +32,9 @@
     <None Remove="Img\interrogacao.png" />
     <None Remove="Img\lala2.png" />
     <None Remove="Img\logo.png" />
+    <None Remove="Img\logo1.png" />
+    <None Remove="Img\logo2.png" />
+    <None Remove="Img\logooo.png" />
     <None Remove="Img\meuscartoes.png" />
     <None Remove="Img\olhinho.png" />
     <None Remove="Img\olhinhos.png" />
@@ -50,8 +59,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Img\logo.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <EmbeddedResource Include="Img\logo1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img\logo2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Img\olhinhos.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

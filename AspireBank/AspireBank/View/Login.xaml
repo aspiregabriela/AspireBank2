@@ -5,17 +5,17 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#ffccff"
+            <GradientStop Color="#A35AF1"
                           Offset="0.1" />
-            <GradientStop Color="#ffccff"
-                          Offset="1.0" />
+            <GradientStop Color="#F6C6FA"
+                          Offset="1.0" /> 
         </LinearGradientBrush>
     </ContentPage.Background>
     <ContentPage.Content>
         <StackLayout>
 
 
-            <Image x:Name="img_logo" 
+            <Image x:Name="img_logo2" 
                    HeightRequest="150" 
                    Scale="2.2"
                    Margin="15" 
