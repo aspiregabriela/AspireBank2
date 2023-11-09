@@ -5,17 +5,17 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#ffccff"
-                          Offset="0.1" />
-            <GradientStop Color="#ffccff"
-                          Offset="1.0" />
+            <GradientStop Color="#A35AF1"
+                      Offset="0.1" />
+            <GradientStop Color="#F6C6FA"
+                      Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
     <ContentPage.Content>
         <StackLayout>
 
 
-            <Image x:Name="img_logo"
+            <Image x:Name="img_logo2"
                    HeightRequest="150"
                    Scale="2.2" 
                    Margin="15" 
@@ -31,7 +31,7 @@
 
                     <Label Text="Insira Seus Dados"
                            HorizontalOptions="Center"
-                           FontSize="Title" FontAttributes="Bold" TextColor="#7c127b"/>
+                           FontSize="Title" FontAttributes="Bold" TextColor="#A35AF1"/>
 
                     <Label Text="Nome:" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_nome" BackgroundColor="Transparent" FontSize="20"
@@ -52,12 +52,18 @@
                        TextColor="black" MaxLength="100"/>
 
 
-                    <Button Text="Criar Conta" CornerRadius="10"
-                            BackgroundColor="Transparent"                                          
-                            TextColor="#7c127b" FontSize="14"
+                    <Button Text="Criar Conta!" 
+                            FontAttributes="Italic"
+                            BorderColor="#A35AF1"
+                            BorderWidth="1"
+                            CornerRadius="10"
+                            HeightRequest="40"
+                            WidthRequest="50"
+                            BackgroundColor="Transparent"  
+                            TextColor="#A35AF1" 
+                            FontSize="14"
                             Clicked="Button_Clicked"
-                            BorderColor="#7c127b"
-                            BorderWidth="1"/>
+                           />
 
                 </StackLayout>
             </Frame>

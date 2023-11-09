@@ -18,8 +18,8 @@ namespace AspireBank.View
 		{
 			InitializeComponent();
 
-			img_logo.Source = ImageSource.FromResource("AspireBank.Img.logo.png");
-		}
+            img_logo2.Source = ImageSource.FromResource("AspireBank.Img.logo2.png");
+        }
 
 		private async void Button_Clicked(object sender, EventArgs e)
 		{
@@ -48,6 +48,11 @@ namespace AspireBank.View
                 //carregando.IsRunning = false;
                 //carregando.IsVisible = false;//
             }
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
