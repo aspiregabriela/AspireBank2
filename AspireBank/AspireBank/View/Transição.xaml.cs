@@ -15,6 +15,9 @@ namespace AspireBank.View
         public Transição()
         {
             InitializeComponent();
+            voltar.Source = ImageSource.FromResource("AspireBank.Img.voltar.png");
+            Transferencia.Source = ImageSource.FromResource("AspireBank.Img.cobrar.png");
+            Deposito.Source = ImageSource.FromResource("AspireBank.Img.bancoo.png");
         }
 
         private void setaesquerda_Clicked(object sender, EventArgs e)
@@ -25,6 +28,16 @@ namespace AspireBank.View
         private void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync((new TransiçãoEfetuada()));
+        }
+
+       // private void voltar_Clicked(object sender, EventArgs e)
+       // {
+
+       // }
+
+        private void voltar_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PaginaInicial());
         }
     }
 }

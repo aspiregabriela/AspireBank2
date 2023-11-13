@@ -16,6 +16,7 @@ namespace AspireBank.View
         public Recarga()
         {
             InitializeComponent();
+            voltar.Source = ImageSource.FromResource("AspireBank.Img.voltar.png");
         }
 
         private void setaesquerda_Clicked(object sender, EventArgs e)

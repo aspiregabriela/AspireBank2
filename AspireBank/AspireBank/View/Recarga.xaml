@@ -13,45 +13,69 @@
                          HorizontalOptions="Start" 
                          BackgroundColor="White"/>
             </Frame>
-            <Grid RowDefinitions="Auto,65,55,150,40"
-                  Padding="15">
-
+            <Grid RowDefinitions="Auto,60,50,140,50" Padding="15">
 
                 <StackLayout>
                     <Frame BackgroundColor="#f0f1f5" 
-                           WidthRequest="280"
-                           CornerRadius="20"
+                           WidthRequest="280" 
+                           CornerRadius="20" 
                            HeightRequest="80">
+
                         <Label>
                             <Label.FormattedText>
+
                                 <FormattedString>
-                                    <Span Text="Realize a sua Recarga Aqui: 
-                                           " FontAttributes="Bold" 
+
+                                    <Span Text="Realize A sua Regarga Aqui!                                                                                                                                                                                                                   " 
+                                          FontAttributes="Bold" 
                                           FontSize="19" 
                                           TextColor="Black"/>
-                                    <Span Text="Recarregue e receba um bônus de 1GB grátis!" 
+                                    <Span Text="Faça aqui sua Recarga para qualquer Operadora!" 
                                           FontSize="17" 
-                                          TextColor="Black"/>
+                                             TextColor="Black"/>
+
                                 </FormattedString>
+
                             </Label.FormattedText>
                         </Label>
                     </Frame>
+
                 </StackLayout>
+
+                    <Label Text="Envie ou Receba" 
+                           FontAttributes="Bold"            
+                           TextColor="Black"
+                           FontSize="20" 
+                           Grid.Row="1"
+                           Margin="5,5,-0,0"/>
+
+
+                <StackLayout Orientation="Horizontal"
+                             Spacing="35" 
+                             Grid.Row="2"
+                             Margin="2,-20,0,0">
+
+
+                    <StackLayout>
+                        <ImageButton Source="cobrar.png"
+                         x:Name="Fazer Regarga"
+                         WidthRequest="60" 
+                         HeightRequest="60"
+                         BackgroundColor="#f0f1f5"
+                         Padding="15"
+                         CornerRadius="50"/>
+
+                        <Label TextColor="Black" 
+                          FontSize="14"
+                          HorizontalOptions="Center"
+                          Text="Transferir"/>
+                    </StackLayout>
+
+
+                    
             </Grid>
 
-         
 
-            <StackLayout>
-                <Button Text="Finalizar a Recarga" 
-                            x:Name="final_recarga"
-                            TextColor="Black"  
-                            BackgroundColor="Black"
-                            FontAttributes="Bold"
-                            WidthRequest="300"
-                           Clicked="final_recarga_Clicked" 
-                            CornerRadius="15"
-                            Margin="10,20,20,10"/>
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
