@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,5 +27,25 @@ namespace AspireBank.View
         {
             Navigation.PushAsync((new RecargaEfetuada()));
         }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.PaginaInicial());
+        }
+
+        private void final_recarga_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void voltar_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        //   private void voltar_Clicked(object sender, EventArgs e)
+        //  {
+
+        //}
     }
 }

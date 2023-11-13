@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AspireBank.View.Login">
+             x:Class="AspireBank.View.Login"
+             >
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -35,6 +36,7 @@
 
                     <Label Text="CPF:" FontAttributes="Bold" TextColor="Black"/>
                     <Entry x:Name="txt_cpf"/>
+                    
                     <Label Text="Senha:" FontAttributes="bold" TextColor="black"/>
                     <Entry IsPassword="True" x:Name="txt_senha"/>
                     <Button Text="Entrar" TextColor="White" Clicked="Button_Clicked_1"   BackgroundColor="#A35AF1" BorderColor="Black" CornerRadius="10"/>
